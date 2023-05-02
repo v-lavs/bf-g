@@ -4,6 +4,7 @@
 
 //= include ../lib/jquery.min.js ;
 //= include ../lib/swiper/swiper-bundle.min.js
+//= include ../lib/baguetteBox.min.js
 
 // CUSTOM SCRIPTS
 
@@ -147,6 +148,23 @@ let advantagesSlider;
     window.addEventListener('resize', function () {
         clearTimeout(resizeId);
         resizeId = setTimeout(handleResponsive, 500);
+    });
+
+
+    //BAGUETTE BOX
+    $('.awards-list a').click(function (e) {
+        e.preventDefault();
+    });
+
+    baguetteBox.run('.awards-list', {
+        buttons: 'auto', // arrows navigation
+        noScrollbars: false,
+        bodyClass: 'baguetteBox-open',
+        titleTag: false,
+        async: false,
+        preload: 2,
+        animation: 'fadeIn',
+        overlayBackgroundColor: 'rgba (1,1,1, .25)'
     });
 
 });
