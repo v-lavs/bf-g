@@ -1,0 +1,67 @@
+.section-banner {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.12;
+  color: #00ADF1;
+  margin-bottom: 120px;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    min-height: 774px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: 45px;
+  }
+
+  &__text:empty {
+    display: none;
+  }
+
+  &__slogan {
+    max-width: 505px;
+    font-weight: 700;
+    font-size: 55px;
+    color: #02628C;
+  }
+
+  &__wrap-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .img-home-banner {
+    max-width: 1033px;
+    left: 28%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url(../assets/img/banner-mask-2.png);
+    mask-image: url(../assets/img/banner-mask-2.png);
+    filter: sepia(300%) hue-rotate(150deg) saturate(450%);
+  }
+}
+
+
+
+
+
+

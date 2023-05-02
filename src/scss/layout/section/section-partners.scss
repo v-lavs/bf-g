@@ -1,0 +1,23 @@
+.section-partners {
+  padding-bottom: 125px;
+}
+
+.slider-partners {
+  padding-bottom: 64px;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

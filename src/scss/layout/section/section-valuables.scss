@@ -1,0 +1,44 @@
+.section-valuables{
+  padding-bottom: 110px;
+  .section__title{
+    margin-bottom: 60px;
+  }
+  .swiper-wrapper{
+    justify-content: space-between;
+  }
+  .valuables{
+    &__card{
+      width: 29%;
+    }
+    &__text{
+      font-size: 32px;
+      text-align: center;
+      color: #00ADF1;
+    }
+    &__icon{
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size:contain;
+      max-width: 198px;
+      padding-top: 54.25%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include respond-to($md){
+  .section-valuables{
+    padding-bottom: 60px;
+    .swiper-wrapper{
+      justify-content: flex-start;
+    }
+    .valuables{
+      padding-bottom: 38px;
+    }
+  }
+  .swiper-horizontal > .swiper-pagination-bullets{
+    display: block;
+    bottom: 0;
+  }
+
+}

@@ -1,0 +1,110 @@
+.mission-page {
+  .section-banner {
+    .wrap-img {
+      min-height: 403px;
+      position: relative;
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: '';
+      }
+
+      &:before {
+        background-image: url(../assets/img/snowflake.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 216px;
+        height: 216px;
+        left: calc(50% + 30px);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+      &:after {
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: 719px;
+        background-image: linear-gradient(180deg, rgba(91, 189, 223, 0.9) 0%, rgba(1, 169, 240, 0.9) 100%);
+      }
+    }
+
+    .container {
+      min-height: 403px;
+    }
+  }
+
+  .page__title {
+    margin-bottom: 0;
+  }
+}
+
+.mission-card {
+  padding: 60px 0;
+  margin-bottom: 80px;
+
+  &:nth-child(even) {
+    padding-top: 76px;
+    position: relative;
+    background-image: linear-gradient(88.96deg, #FFFFFF 0.89%, #01A9F0 99.19%);
+
+    h3 {
+      color: #02628C;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: .5;
+      background-image: url(../assets/img/bg-card-val.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__icon {
+    width: 22%;
+    min-height: 254px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    padding-left: 24px;
+
+    h3 {
+      font-size: 48px;
+      color: #00B2F4;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

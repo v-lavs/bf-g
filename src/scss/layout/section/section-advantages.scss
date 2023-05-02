@@ -1,0 +1,68 @@
+.section-advantages{
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 120px;
+  &:before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1202px;
+    background-image: url(../assets/img/bg-adv.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    top: 94px;
+    right: 0;
+    z-index: -1;
+  }
+  .section__title{
+    margin-bottom: 90px;
+  }
+}
+.advantages{
+  max-width: 866px;
+  width: 100%;
+  margin: 0 auto;
+  &__card{
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00B2F4 0%, #DCF6FD 85.73%);
+  }
+  &__icon{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 50%;
+  }
+  &__text{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-wrapper{
+    justify-content: space-between;
+  }
+  .swiper-slide{
+    width: auto;
+  }
+}
+
+@include respond-to($sm){
+  .section-advantages{
+
+  }
+  .advantages{
+    .swiper-slide{
+      width: 100%;
+    }
+    .swiper-wrapper{
+      justify-content: flex-start;
+    }
+  }
+}

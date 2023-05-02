@@ -1,0 +1,146 @@
+.menu {
+  display: flex;
+  font-family: $main-font;
+
+  &__item {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: #02628C;
+
+    &:hover > .sub-menu {
+      z-index: 1;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+    }
+
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      -webkit-text-stroke: .5px #02628C;
+      text-stroke: .5px #02628C;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    > .menu__link {
+      position: relative;
+      padding-right: 32px;
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        background-image: url("../assets/img/chevron-right.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        z-index: 1;
+      }
+    }
+  }
+
+  .sub-menu {
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 100px;
+    width: max-content;
+    background: #FFFFFF;
+    border-radius: 9px;
+    padding: 15px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease;
+    transform: translateY(15px);
+    cursor: default;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 3px 5px;
+
+    li {
+      text-align: left;
+    }
+
+    a {
+      display: inline-block;
+    }
+    &__toggle{
+      display: none;
+    }
+  }
+
+  @include respond-to($lg) {
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+
+    &:hover > .sub-menu {
+      display: none;
+    }
+    .sub-menu {
+      background-color: transparent;
+      box-shadow: none;
+      margin-top: 0;
+      position: relative;
+      top: 0;
+      display: none;
+
+      &__toggle {
+        display: inline-block !important;
+        background-image: url(../assets/img/arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+        border: none;
+        background-color: transparent;
+        transition: .35s;
+
+        &_active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .sub-menu__toggle_active + .sub-menu {
+      display: block !important;
+      position: static;
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+    }
+    .menu__item{
+      color: #FFFFFF;
+    }
+    .menu__item.dropdown {
+      text-align: left;
+    }
+    .dropdown  > .menu__link{
+      padding-right: 10px;
+      &:before{
+        display: none;
+      }
+    }
+  }
+
+}

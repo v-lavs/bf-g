@@ -1,0 +1,44 @@
+.section-about {
+  padding-bottom: 120px;
+  overflow: hidden;
+  background-size: 785px 943px;
+  background-position: left -5% bottom -30%;
+  background-repeat: no-repeat;
+
+  .btn {
+    margin-top: 70px;
+  }
+
+  .part_left,
+  .part_right {
+    width: 50%;
+  }
+
+  .section__img {
+    position: relative;
+    min-height: 820px;
+    height: auto;
+
+    img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 24px;
+      max-width: 708px;
+      width: 50vw;
+
+    }
+  }
+
+  .section__content {
+    padding-top: 100px;
+
+  }
+}
+
+.charity {
+  .section__img img{
+    right: 24px;
+    left: auto;
+  }
+}

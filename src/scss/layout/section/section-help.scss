@@ -1,0 +1,58 @@
+.section-help {
+  padding-bottom: 60px;
+}
+
+//slider
+
+.about-helps {
+  padding-bottom: 64px;
+
+  .post {
+    max-width: 419px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 0 15px 15px;
+    color: #FFFFFF;
+    text-align: center;
+
+    &__thumb {
+      min-height: 300px;
+      width: 100%;
+      border-radius: 0;
+      margin-bottom: 30px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      min-height: 276px;
+      padding: 0 10px 30px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    &__link {
+      display: inline-block;
+      text-align: right;
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: auto;
+      margin-left: auto;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

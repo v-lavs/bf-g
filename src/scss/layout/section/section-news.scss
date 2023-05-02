@@ -1,0 +1,20 @@
+.section-news{
+  background-image: url(../assets/img/bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  .section__title{
+    font-weight: 700;
+    font-size: 58px;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+  }
+}
+
+.slider-news{
+  max-width: 1092px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}

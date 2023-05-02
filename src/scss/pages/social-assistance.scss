@@ -1,0 +1,89 @@
+.social-assistance {
+  .description {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 120px;
+  }
+
+  .section-banner {
+    .wrap-img {
+      min-height: 567px;
+    }
+
+    .container {
+      min-height: 567px;
+    }
+
+    &__slogan {
+      font-size: 54px;
+    }
+  }
+}
+
+.referral-list {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.referral {
+  text-align: center;
+  padding-bottom: 120px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 516px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20px 15px;
+    color: #FFFFFF;
+    z-index: 1;
+
+    h2 {
+      position: relative;
+      font-size: 102px;
+      line-height: 1.147;
+      z-index: 1;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+
+    &:before {
+      background-image: url(../assets/img/ref-overlay.png);
+      z-index: 1;
+    }
+
+    &:after {
+      background-color: #00ADF1;
+      opacity: .55;
+    }
+  }
+}
+
+.referral-card {
+  font-weight: 400;
+  font-size: 36px;
+  padding: 60px 0 0;
+
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+}

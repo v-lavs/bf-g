@@ -1,0 +1,23 @@
+.page-news {
+  .wrap-btn {
+    text-align: center;
+  }
+}
+
+.post__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1114px;
+  margin: 0 auto;
+}
+
+.post__item {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 60px;
+}
+
+.charity__list{
+  max-width: 896px;
+  margin-bottom: 60px;
+}
