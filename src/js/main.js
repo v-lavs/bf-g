@@ -59,6 +59,25 @@ $(document).ready(function () {
             el: ".swiper-pagination",
         },
     });
+    var sliderNews = new Swiper(".slider-gallery", {
+        breakpoints: {
+            spaceBetween: 24,
+            320: {
+                slidesPerView: 1,
+            },
+
+            640: {
+                slidesPerView: 2,
+            }
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
     var sliderAboutHelps = new Swiper(".about-helps", {
         breakpoints: {
             spaceBetween: 24,

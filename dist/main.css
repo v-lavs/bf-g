@@ -1171,12 +1171,8 @@ body.modal_open {
 .section__title {
   text-align: center;
   font-weight: 700;
-  font-size: 58px;
-  margin-bottom: 90px;
-}
-
-.section__title_big {
-  font-size: 64px;
+  font-size: 55px;
+  margin-bottom: 60px;
 }
 
 .dynamic-content p {
@@ -1968,10 +1964,6 @@ body.modal_open {
   padding-bottom: 110px;
 }
 
-.section-valuables .section__title {
-  margin-bottom: 60px;
-}
-
 .section-valuables .swiper-wrapper {
   justify-content: space-between;
 }
@@ -2046,9 +2038,7 @@ body.modal_open {
 
 .section-news .section__title {
   font-weight: 700;
-  font-size: 58px;
   color: #FFFFFF;
-  margin-bottom: 90px;
 }
 
 .slider-news {
@@ -2077,10 +2067,6 @@ body.modal_open {
   top: 94px;
   right: 0;
   z-index: -1;
-}
-
-.section-advantages .section__title {
-  margin-bottom: 90px;
 }
 
 .advantages {
@@ -2202,6 +2188,37 @@ body.modal_open {
   height: auto;
 }
 
+.awards-list {
+  max-width: 1118px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 20px;
+}
+
+.awards-list__item {
+  width: 50%;
+  padding: 0 12px;
+  margin-bottom: 40px;
+}
+
+.awards__item {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  padding: 30px 30px 60px;
+}
+
+.awards__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.awards__caption {
+  font-size: 32px;
+}
+
 .social-assistance .description {
   font-size: 36px;
   text-align: center;
@@ -2215,10 +2232,6 @@ body.modal_open {
 
 .social-assistance .section-banner .container {
   min-height: 567px;
-}
-
-.social-assistance .section-banner__slogan {
-  font-size: 54px;
 }
 
 .referral-list {
@@ -2307,37 +2320,6 @@ body.modal_open {
 
 .charity__list {
   max-width: 896px;
-}
-
-.awards-list {
-  max-width: 1118px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto 20px;
-}
-
-.awards-list__item {
-  width: 50%;
-  padding: 0 12px;
-  margin-bottom: 40px;
-}
-
-.awards__item {
-  display: block;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  padding: 30px 30px 60px;
-}
-
-.awards__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.awards__caption {
-  font-size: 32px;
 }
 
 .mission-page .section-banner .wrap-img {
@@ -2444,6 +2426,77 @@ body.modal_open {
 
 .mission-card__content p:last-child {
   margin-bottom: 0;
+}
+
+.awards-list {
+  max-width: 1118px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 20px;
+}
+
+.awards-list__item {
+  width: 50%;
+  padding: 0 12px;
+  margin-bottom: 40px;
+}
+
+.awards__item {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  padding: 30px 30px 60px;
+}
+
+.awards__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.awards__caption {
+  font-size: 32px;
+}
+
+.slider-gallery {
+  max-width: 1092px;
+  width: 100%;
+}
+
+.related-post-list {
+  display: flex;
+}
+
+.awards-list {
+  max-width: 1118px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 20px;
+}
+
+.awards-list__item {
+  width: 50%;
+  padding: 0 12px;
+  margin-bottom: 40px;
+}
+
+.awards__item {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  padding: 30px 30px 60px;
+}
+
+.awards__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.awards__caption {
+  font-size: 32px;
 }
 
 @media only screen and (max-width: 1160px) {
