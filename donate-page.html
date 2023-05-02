@@ -1,10 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Сторінка пожертвувати</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--зaкрыть индексацию -->
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex">
+
+
+    <title>Реквізити благодійного фонду</title>
+    <link rel="stylesheet" href="./dist/main.css">
 </head>
+
 <body>
 
+<div class="wrapper">
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <h1 class="hide">Благодійний фонд Родини Жебрівських</h1>
+                <img src="assets/img/logo-top.svg" alt="<Благодійний фонд Родини Жебрівських>" width="310" height="75">
+            </a>
+            <div class="header__nav">
+                <ul class="menu">
+                    <li class="menu__item  dropdown">
+                        <a href="#" class="menu__link">Про Фонд</a>
+                        <button type="button" class="sub-menu__toggle"></button>
+                        <ul class="sub-menu">
+                            <li class="menu__item">
+                                <a href="mission-page.html" class="menu__link">Місія і цінності</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="fund-reporting.html" class="menu__link">Звітність фонду</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="awards-page.html" class="menu__link">Нагороди і подяки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#partners" class="menu__link">Партнери і благодійники</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu__item"><a href="news.html" class="menu__link">Новини</a></li>
+                    <li class="menu__item"><a href="social-assistance.html" class="menu__link">Суспільна допомога</a>
+                    </li>
+                    <li class="menu__item"><a href="donate-page.html" class="menu__link">Пожертвувати</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__link">Контакти</a></li>
+                </ul>
+                <div class="header__contacts-mob">
+                    <p>Благодійний фонд Родини Жебрівських</p>
+                    <div class="address">
+                        м. Київ, вул. Хрещатик, 1
+                    </div>
+                    <a href="mailto:Zhebrivska@family.com" class="email">Zhebrivska@family.com</a>
+                    <a href="tel:+38 012-345-67-89" class="tel">+38 012-345-67-89</a>
+                    <a href="tel:+38 012-345-67-89" class="tel">+38 012-345-67-89</a>
+                </div>
+            </div>
+            <div class="header__lang">
+                <a href="#" class="header__lang-link active">УКР</a>
+                <a href="" class="header__lang-link">ENG</a>
+            </div>
+            <button type="button" aria-label="Відкрити меню" class="btn-burger">
+                    <span class="btn-burger__inner">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    </span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main page donate-page">
+        <div class="container">
+            <!--   breadcrumb     -->
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a href="index.html">Про фонд</a></li>
+                    <li class="breadcrumb__item active" aria-current="page">Нагороди і подяки</li>
+                </ul>
+            </nav>
+            <!--   breadcrumb end    -->
+
+            <div class="wrap-content">
+                <div class="part_left">
+                    <div class="section-banner__slogan">
+                        <span class="color-white">Діємо</span>, будуючи небайдуже суспільство
+                    </div>
+                </div>
+                <div class="part_right">
+                    <h2 class=section__title">Реквізити благодійного фонду</h2>
+                    <div class="bank-details">
+                        Номер рахунку: UA1430061400000260035345743 <br>
+                        Валюта рахунку: 980 (UAH) <br>
+                        Найменування банку: АТ «КРЕДІ АГРІКОЛЬ БАНК» <br>
+                        Отримувач: Всеукраїнська благодійна організація благодійний фонд родини Жебрівських <br>
+                        ЄДРПОУ/ІНН: 37725772
+                    </div>
+                    <form action="#" class="form form-bank-info">
+                        <label class="label">
+                            <input type="text" name="email" class="input" placeholder="email">
+                        </label>
+                        <button type="submit" class="btn btn_sm btn_light">Відправити</button>
+                    </form>
+                </div>
+            </div>
+            <form action="#" class="form form-donate">
+                <h2 class="section__title">Пожертвувати онлайн</h2>
+                <fieldset>
+                    <legend>Номер карти</legend>
+                    <ul class="card-pattern-list">
+                        <li class="card-pattern-item">
+                            <label class="label">
+                                <input type="text" name="card-number" class="input" placeholder="0000 0000 0000 0000">
+                            </label>
+                        </li>
+                        <li class="card-pattern-item">
+                            <div class="input-group">
+                                <label class="label">
+                                    <input type="text" name="validity-date" class="input" placeholder="MM/YY">
+                                </label>
+                                <label class="label">
+                                    <input type="text" name="authentication-code" class="input" placeholder="CVC">
+                                </label>
+                                <label class="label">
+                                    <input type="text" name="card-number" class="input" placeholder="0.00">
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="submit" class="btn btn_sm btn_light">Відправити</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container clearfix">
+                <div class="part_left"></div>
+                <div class="part_right">
+                    <div class="text">
+                        Стабільно пропонується широкий вибір відкриттів: розробка програмного забезпечення,
+                        телекомунікації
+                        і кімнатні й садові рослини для киян і стильних особистостей.
+                    </div>
+                    <a href="donate-page.html" class="btn btn_lg btn_dark">Зробити благодійний внесок</a>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="footer-bottom">
+            <div class="container">
+                <div class="footer__logo">
+                    <img src="assets/img/logo-white.svg" alt="лого Благодійний фонд Родини Жебрівських">
+                </div>
+                <div class="footer__nav footer__part">
+                    <ul class="footer__menu">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Про Фонд</a></li>
+                        <li class="menu__item"><a href="news.html" class="menu__link">Новини</a></li>
+                        <li class="menu__item"><a href="social-assistance.html" class="menu__link">Суспільна
+                            допомога</a></li>
+                        <li class="menu__item"><a href="donate-page.html" class="menu__link">Пожертвувати </a></li>
+                    </ul>
+                </div>
+                <div class="footer__part">
+                    <h4 class="footer__title">Благодійний фонд Родини Жебрівських</h4>
+                    <div class="address">м. Київ, вул. Хрещатик, 1</div>
+                </div>
+                <div class="footer__part">
+                    <h4 class="footer__title">Контакти</h4>
+                    <div class="contacts">
+                        <a href="tel:+38 012-345-67-89" class="contacts__item">
+                            <span class="contacts__icon">
+                                <img src="assets/img/phone.svg" alt="">
+                            </span> +38 012-345-67-89
+                        </a>
+                        <a href="tel:+38 012-345-67-89" class="contacts__item">
+                            <span class="contacts__icon"><img src="assets/img/phone.svg" alt="">
+                            </span> +38 012-345-67-89
+                        </a>
+                        <a href="mailto:Zhebrivska@family.com" class="contacts__item">
+                            <span class="contacts__icon">
+                                <img src="assets/img/mail.svg" alt="">
+                            </span> Zhebrivska@family.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+<script src="dist/main.js"></script>
 </body>
 </html>
