@@ -12,12 +12,10 @@ body {
 
   &.modal_open {
     overflow: hidden;
-    height: 100%;
   }
 }
 
 .wrapper {
-
   width: 100%;
   height: 100%;
   display: flex;
@@ -48,11 +46,13 @@ body {
 .color-light-blue {
   color: #00ADF1;
 }
-.color-white{
+
+.color-white {
   color: #FFFFFF;
 }
 
 .main {
+  flex: 1 0 auto;
   padding-top: 105px;
 }
 
@@ -70,7 +70,7 @@ body {
 .dynamic-content {
   p {
     font-size: 32px;
-    margin-bottom: 1.563em;
+    margin-bottom: 1.25em;
 
     &:last-child {
       margin-bottom: 0;
@@ -90,8 +90,8 @@ body {
   }
 
   ul {
-    padding-left: 11px;
-    margin-bottom: 20px;
+    padding-left: 40px;
+    margin-bottom: 40px;
 
     > li {
       position: relative;
@@ -101,28 +101,51 @@ body {
         position: absolute;
         content: '';
         display: block;
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        background-color: #3B4040;
+        background-color: #02628C;
         left: 0;
-        top: 10px;
+        top: 16px;
       }
     }
   }
 
   ol {
     position: relative;
-    padding-left: 32px;
+    padding-left: 60px;
     line-height: 1.5;
     color: #02628C;
     counter-reset: list;
+    margin-bottom: 40px;
 
     li:before {
       position: absolute;
-      left: 8px;
+      left: 25px;
       counter-increment: list;
       content: counters(list, '. ') '.';
+    }
+  }
+
+  blockquote {
+    position: relative;
+
+    color: #FFFFFF;
+    padding: 30px 0;
+    margin-bottom: 60px;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 100vw;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #00ADF1;
+      z-index: -1;
     }
   }
 }
