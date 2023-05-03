@@ -54,6 +54,10 @@ body {
   padding-top: 105px;
 }
 
+.section {
+  padding-bottom: 120px;
+}
+
 .section__title {
   text-align: center;
   font-weight: 700;
@@ -123,6 +127,7 @@ body {
 
 .page {
   padding-bottom: 120px;
+
   &__title {
     font-size: 64px;
     margin-bottom: 60px;
@@ -140,6 +145,7 @@ body {
     &__slogan {
       max-width: 100%;
     }
+
     .wrap-img {
       position: relative;
       width: 50%;
@@ -152,9 +158,10 @@ body {
   }
 
   &.page-bg {
-    .page__title{
+    .page__title {
       color: #FFFFFF;
     }
+
     .breadcrumb {
       color: #FFFFFF;
 
@@ -163,13 +170,15 @@ body {
       }
     }
   }
-  .pagination{
+
+  .pagination {
     max-width: 872px;
     width: 100%;
     margin: 0 auto;
     text-align: right;
+
     .prev,
-    .next{
+    .next {
       display: inline-block;
       width: 27px;
       height: 19px;
@@ -178,7 +187,8 @@ body {
       background-position: center;
       background-size: contain;
     }
-    .next{
+
+    .next {
       transform: rotate(180deg);
     }
   }

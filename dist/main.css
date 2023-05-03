@@ -1168,6 +1168,10 @@ body.modal_open {
   padding-top: 105px;
 }
 
+.section {
+  padding-bottom: 120px;
+}
+
 .section__title {
   text-align: center;
   font-weight: 700;
@@ -1569,7 +1573,7 @@ body.modal_open {
 
 .post_sm {
   max-width: 316px;
-  padding: 0 12px 30px;
+  padding: 0 12px 5px;
   border-radius: 0;
 }
 
@@ -1961,7 +1965,7 @@ body.modal_open {
 }
 
 .section-valuables {
-  padding-bottom: 110px;
+  padding-bottom: 90px;
 }
 
 .section-valuables .swiper-wrapper {
@@ -1988,7 +1992,6 @@ body.modal_open {
 }
 
 .section-about {
-  padding-bottom: 120px;
   overflow: hidden;
   background-size: 785px 943px;
   background-position: left -5% bottom -30%;
@@ -2051,7 +2054,6 @@ body.modal_open {
 .section-advantages {
   position: relative;
   padding-top: 140px;
-  padding-bottom: 120px;
 }
 
 .section-advantages:before {
@@ -2162,10 +2164,6 @@ body.modal_open {
 .about-helps .post__link:hover,
 .about-helps .post__link:focus {
   text-decoration: underline;
-}
-
-.section-partners {
-  padding-bottom: 125px;
 }
 
 .slider-partners {
@@ -2393,6 +2391,7 @@ body.modal_open {
 
 .mission-card:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .mission-card .container {
