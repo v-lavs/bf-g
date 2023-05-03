@@ -1,0 +1,98 @@
+.donate-page {
+  .section-banner__slogan {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .breadcrumb {
+    color: #FFFFFF;
+
+    &__item:before {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .section-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 120px;
+    width: 45%;
+    flex-shrink: 0;
+    overflow: visible;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50vw;
+      max-width: 654px;
+      background-image: linear-gradient(180deg, #0087B5 0%, #01A9F0 100%);
+      z-index: -1;
+    }
+  }
+}
+.section-bank-info {
+  padding-left: 24px;
+  margin-bottom: 120px;
+  font-weight: 400;
+
+  .section__title {
+    text-align: left;
+  }
+}
+.block-donate h3{
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+.bank-details {
+  margin-bottom: 44px;
+}
+.form-bank-info {
+  max-width: 334px;
+  padding-top: 25px;
+}
+.form-donate {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+
+  .input-group{
+    display: flex;
+    justify-content: space-between;
+  }
+  .label{
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .input{
+    padding: 13px 16px 14px;
+  }
+  ::placeholder {
+    color: rgba(17, 17, 19, 0.6);
+  }
+  .input_lg{
+    padding-right: 40px;
+    background-image: url(../assets/img/mastercard.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px   center;
+    background-size: 18px 18px;
+
+  }
+  .label_sm{
+    width: 27%;
+  }
+  .label_md{
+    width: 40%;
+  }
+  .input{
+    font-size: 16px;
+  }
+  .btn_submit{
+    margin-top: 10px;
+  }
+}

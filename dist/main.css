@@ -1164,6 +1164,10 @@ body.modal_open {
   color: #00ADF1;
 }
 
+.color-white {
+  color: #FFFFFF;
+}
+
 .main {
   padding-top: 105px;
 }
@@ -1240,6 +1244,7 @@ body.modal_open {
 }
 
 .page {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -1495,11 +1500,12 @@ body.modal_open {
 .breadcrumb {
   display: flex;
   align-items: center;
+  width: 100%;
   font-weight: 400;
   font-size: 22px;
   line-height: 1;
   color: #02628C;
-  padding: 20px 0 0;
+  padding: 30px 0 0;
   margin-bottom: 60px;
 }
 
@@ -1510,10 +1516,6 @@ body.modal_open {
 }
 
 .breadcrumb__item.active {
-  width: 50%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-weight: 700;
 }
 
@@ -1669,11 +1671,39 @@ body.modal_open {
   transform: rotate(180deg);
 }
 
+.input {
+  width: 100%;
+  border: 1px solid rgba(17, 17, 19, 0.2);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 9px 20px;
+}
+
+::placeholder {
+  color: rgba(17, 17, 19, 0.2);
+}
+
+.label {
+  display: inline-block;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.label:last-child {
+  padding-bottom: 0;
+}
+
+.btn_submit {
+  width: 100%;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 60px;
   width: 100%;
   margin: 0 auto;
+  background-color: bisque;
 }
 
 .header {
@@ -1682,7 +1712,7 @@ body.modal_open {
   right: 0;
   top: 0;
   background-color: #ffffff;
-  padding: 20px 8px;
+  padding: 23px 8px;
   z-index: 900;
 }
 
@@ -2186,37 +2216,6 @@ body.modal_open {
   height: auto;
 }
 
-.awards-list {
-  max-width: 1118px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto 20px;
-}
-
-.awards-list__item {
-  width: 50%;
-  padding: 0 12px;
-  margin-bottom: 40px;
-}
-
-.awards__item {
-  display: block;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  padding: 30px 30px 60px;
-}
-
-.awards__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.awards__caption {
-  font-size: 32px;
-}
-
 .social-assistance .description {
   font-size: 36px;
   text-align: center;
@@ -2458,6 +2457,14 @@ body.modal_open {
   font-size: 32px;
 }
 
+.single-article .breadcrumb__item.active {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+}
+
 .slider-gallery {
   max-width: 1092px;
   width: 100%;
@@ -2467,35 +2474,114 @@ body.modal_open {
   display: flex;
 }
 
-.awards-list {
-  max-width: 1118px;
+.donate-page .section-banner__slogan {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.donate-page .breadcrumb {
+  color: #FFFFFF;
+}
+
+.donate-page .breadcrumb__item:before {
+  filter: brightness(0) invert(1);
+}
+
+.donate-page .section-banner {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 120px;
+  width: 45%;
+  flex-shrink: 0;
+  overflow: visible;
+  z-index: 1;
 }
 
-.awards-list__item {
-  width: 50%;
-  padding: 0 12px;
-  margin-bottom: 40px;
-}
-
-.awards__item {
+.donate-page .section-banner:before {
+  position: absolute;
+  content: '';
   display: block;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  padding: 30px 30px 60px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  max-width: 654px;
+  background-image: linear-gradient(180deg, #0087B5 0%, #01A9F0 100%);
+  z-index: -1;
 }
 
-.awards__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
+.section-bank-info {
+  padding-left: 24px;
+  margin-bottom: 120px;
+  font-weight: 400;
 }
 
-.awards__caption {
+.section-bank-info .section__title {
+  text-align: left;
+}
+
+.block-donate h3 {
   font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.bank-details {
+  margin-bottom: 44px;
+}
+
+.form-bank-info {
+  max-width: 334px;
+  padding-top: 25px;
+}
+
+.form-donate {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-donate .input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-donate .label {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-donate .input {
+  padding: 13px 16px 14px;
+}
+
+.form-donate ::placeholder {
+  color: rgba(17, 17, 19, 0.6);
+}
+
+.form-donate .input_lg {
+  padding-right: 40px;
+  background-image: url(../assets/img/mastercard.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px   center;
+  background-size: 18px 18px;
+}
+
+.form-donate .label_sm {
+  width: 27%;
+}
+
+.form-donate .label_md {
+  width: 40%;
+}
+
+.form-donate .input {
+  font-size: 16px;
+}
+
+.form-donate .btn_submit {
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -2633,5 +2719,11 @@ body.modal_open {
 
   .advantages .swiper-wrapper {
     justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
   }
 }

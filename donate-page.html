@@ -10,7 +10,7 @@
     <meta name="robots" content="noindex">
 
 
-    <title>Реквізити благодійного фонду</title>
+    <title>Пожертвувати</title>
     <link rel="stylesheet" href="./dist/main.css">
 </head>
 
@@ -76,66 +76,68 @@
     </header>
 
     <main class="main page donate-page">
-        <div class="container">
-            <!--   breadcrumb     -->
-            <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb__item"><a href="index.html">Про фонд</a></li>
-                    <li class="breadcrumb__item active" aria-current="page">Нагороди і подяки</li>
-                </ul>
-            </nav>
-            <!--   breadcrumb end    -->
-
-            <div class="wrap-content">
-                <div class="part_left">
-                    <div class="section-banner__slogan">
-                        <span class="color-white">Діємо</span>, будуючи небайдуже суспільство
-                    </div>
-                </div>
-                <div class="part_right">
-                    <h2 class=section__title">Реквізити благодійного фонду</h2>
-                    <div class="bank-details">
-                        Номер рахунку: UA1430061400000260035345743 <br>
-                        Валюта рахунку: 980 (UAH) <br>
-                        Найменування банку: АТ «КРЕДІ АГРІКОЛЬ БАНК» <br>
-                        Отримувач: Всеукраїнська благодійна організація благодійний фонд родини Жебрівських <br>
-                        ЄДРПОУ/ІНН: 37725772
-                    </div>
-                    <form action="#" class="form form-bank-info">
-                        <label class="label">
-                            <input type="text" name="email" class="input" placeholder="email">
-                        </label>
-                        <button type="submit" class="btn btn_sm btn_light">Відправити</button>
-                    </form>
+        <div class="container d-flex">
+            <div class="section section-banner">
+                <!--   breadcrumb     -->
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb__item"><a href="index.html">Про фонд</a></li>
+                        <li class="breadcrumb__item active" aria-current="page">Пожертвувати</li>
+                    </ul>
+                </nav>
+                <!--   breadcrumb end    -->
+                <div class="section-banner__slogan">
+                    <span class="color-white">Діємо</span>, будуючи небайдуже суспільство
                 </div>
             </div>
-            <form action="#" class="form form-donate">
+            <div class="section-bank-info">
+                <h2 class="section__title">Реквізити благодійного фонду</h2>
+                <div class="bank-details">
+                    Номер рахунку: UA1430061400000260035345743 <br>
+                    Валюта рахунку: 980 (UAH) <br>
+                    Найменування банку: АТ «КРЕДІ АГРІКОЛЬ БАНК» <br>
+                    Отримувач: Всеукраїнська благодійна організація благодійний фонд родини Жебрівських <br>
+                    ЄДРПОУ/ІНН: 37725772
+                </div>
+                <p><strong>Відправити реквізити на пошту</strong></p>
+                <form action="#" class="form form-bank-info">
+                    <label class="label">
+                        <input type="text" name="email" class="input" placeholder="email">
+                    </label>
+                    <button type="submit" class="btn btn_sm btn_light btn_submit">Відправити</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block-donate">
                 <h2 class="section__title">Пожертвувати онлайн</h2>
-                <fieldset>
-                    <legend>Номер карти</legend>
+                <form action="#" class="form form-donate">
+                    <h3>Номер карти</h3>
                     <ul class="card-pattern-list">
                         <li class="card-pattern-item">
                             <label class="label">
-                                <input type="text" name="card-number" class="input" placeholder="0000 0000 0000 0000">
+                                <input type="text" name="card-number" class="input input_lg"
+                                       placeholder="0000 0000 0000 0000">
                             </label>
                         </li>
                         <li class="card-pattern-item">
                             <div class="input-group">
-                                <label class="label">
+                                <label class="label label_sm">
                                     <input type="text" name="validity-date" class="input" placeholder="MM/YY">
                                 </label>
-                                <label class="label">
+                                <label class="label label_sm">
                                     <input type="text" name="authentication-code" class="input" placeholder="CVC">
                                 </label>
-                                <label class="label">
+                                <label class="label label_md">
                                     <input type="text" name="card-number" class="input" placeholder="0.00">
                                 </label>
                             </div>
                         </li>
                     </ul>
-                    <button type="submit" class="btn btn_sm btn_light">Відправити</button>
-                </fieldset>
-            </form>
+                    <button type="submit" class="btn btn_sm btn_light btn_submit">Відправити</button>
+
+                </form>
+            </div>
         </div>
     </main>
 

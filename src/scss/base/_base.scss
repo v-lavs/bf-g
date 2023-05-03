@@ -14,7 +14,6 @@ body {
     overflow: hidden;
     height: 100%;
   }
-
 }
 
 .wrapper {
@@ -48,6 +47,9 @@ body {
 
 .color-light-blue {
   color: #00ADF1;
+}
+.color-white{
+  color: #FFFFFF;
 }
 
 .main {
@@ -126,6 +128,7 @@ body {
 }
 
 .page {
+  padding-top: 120px;
   padding-bottom: 120px;
 
   &__title {
@@ -135,12 +138,10 @@ body {
   }
 
   .section-banner {
-
     .part_left {
       width: 50%;
       padding-right: 24px;
     }
-
 
     &__slogan {
       max-width: 100%;
