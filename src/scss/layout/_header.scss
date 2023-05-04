@@ -112,7 +112,7 @@
   }
 }
 
-@include respond-to($lg) {
+@include respond-to($xl) {
 
   .header__nav {
     position: absolute;
