@@ -1,7 +1,6 @@
 .section-advantages{
   position: relative;
   padding-top: 140px;
-  //padding-bottom: 120px;
   &:before{
     position: absolute;
     content: '';
@@ -44,10 +43,16 @@
     align-items: center;
   }
   .swiper-wrapper{
-    justify-content: space-between;
+    justify-content: center;
   }
+
   .swiper-slide{
-    width: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 334px;
+    width: 100%;
+    padding: 0 30px;
+    flex-shrink: 1;
   }
 }
 

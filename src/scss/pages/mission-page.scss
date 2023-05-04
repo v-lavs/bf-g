@@ -2,7 +2,6 @@
   .section-banner {
     .wrap-img {
       min-height: 403px;
-      position: relative;
 
       &:before,
       &:after {
@@ -17,7 +16,7 @@
         background-size: contain;
         width: 216px;
         height: 216px;
-        left: calc(50% + 30px);
+        left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
@@ -27,7 +26,7 @@
         bottom: 0;
         top: 0;
         left: 0;
-        width: 719px;
+        width: 100%;
         background-image: linear-gradient(180deg, rgba(91, 189, 223, 0.9) 0%, rgba(1, 169, 240, 0.9) 100%);
       }
     }
@@ -36,6 +35,7 @@
       min-height: 403px;
     }
   }
+
   .page__title {
     margin-bottom: 0;
   }

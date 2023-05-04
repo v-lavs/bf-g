@@ -48,7 +48,7 @@
 
   &__logo {
     max-width: 310px;
-    margin-right: auto;
+    margin-right: 20px;
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
@@ -62,7 +62,11 @@
   &__part {
     padding-left: 24px;
     max-width: 314px;
-    width: 25%;
+  }
+
+  &__nav {
+    margin-left: auto;
+    min-width: 275px;
   }
 
   &__title {
@@ -71,7 +75,7 @@
   }
 
   &__menu {
-    padding-left: 60px;
+    padding-left: 20px;
   }
 
   .menu__item {

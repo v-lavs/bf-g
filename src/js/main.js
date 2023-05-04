@@ -42,13 +42,14 @@ $(document).ready(function () {
     //SLIDER NEWS
     var sliderNews = new Swiper(".slider-news", {
         breakpoints: {
-            spaceBetween: 24,
             320: {
                 slidesPerView: 1,
+                spaceBetween: 24,
             },
 
             640: {
                 slidesPerView: 2,
+                spaceBetween: 24,
             }
         },
         navigation: {
@@ -59,15 +60,17 @@ $(document).ready(function () {
             el: ".swiper-pagination",
         },
     });
-    var sliderNews = new Swiper(".slider-gallery", {
+
+    var sliderGallery = new Swiper(".slider-gallery", {
         breakpoints: {
-            spaceBetween: 24,
             320: {
                 slidesPerView: 1,
+                spaceBetween: 24,
             },
 
             640: {
                 slidesPerView: 2,
+                spaceBetween: 24,
             }
         },
         navigation: {
@@ -78,14 +81,16 @@ $(document).ready(function () {
             el: ".swiper-pagination",
         },
     });
+
     var sliderAboutHelps = new Swiper(".about-helps", {
         breakpoints: {
-            spaceBetween: 24,
             320: {
                 slidesPerView: 1,
+                spaceBetween: 24,
             },
             640: {
                 slidesPerView: 3,
+                spaceBetween: 24,
             }
         },
         navigation: {
@@ -96,6 +101,7 @@ $(document).ready(function () {
             el: ".swiper-pagination",
         },
     });
+
     var sliderPartners = new Swiper(".slider-partners", {
         navigation: {
             nextEl: ".swiper-button-next",
@@ -132,7 +138,7 @@ $(document).ready(function () {
                 });
             }
         } else {
-            destroySwiper(valuablesSlider);
+            destroySwiper(valuablesSlider, true);
             valuablesSlider = null;
         }
 

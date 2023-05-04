@@ -21,7 +21,6 @@
 }
 
 .article {
-  max-width: 1114px;
   margin: 0 auto 120px;
   font-weight: 400;
 
@@ -86,7 +85,6 @@
 
 .video {
   position: relative;
-  max-width: 1114px;
   width: 100%;
   margin: 0 auto;
   padding-top: 44.55%;
@@ -114,8 +112,6 @@
 }
 
 .slider-gallery {
-  max-width: 1092px;
-  width: 100%;
   padding-bottom: 60px;
 
   &__wrap-img {
@@ -152,4 +148,11 @@
 
 .related-post-list {
   display: flex;
+}
+
+.related-post__item {
+  width: 25%;
+  .post {
+    max-width: none;
+  }
 }

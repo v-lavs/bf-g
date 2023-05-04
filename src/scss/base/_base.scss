@@ -171,13 +171,11 @@ body {
     }
 
     .wrap-img {
-      position: relative;
-      width: 50%;
+      position: absolute;
+      width: 50vw;
+      left: 50%;
       height: 100%;
-    }
-
-    img {
-      max-width: 719px;
+      max-width: 960px;
     }
   }
 
