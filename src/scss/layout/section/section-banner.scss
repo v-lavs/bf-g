@@ -57,6 +57,7 @@
     -webkit-mask-image: url(../assets/img/banner-mask-2.png);
     mask-image: url(../assets/img/banner-mask-2.png);
     filter: sepia(300%) hue-rotate(150deg) saturate(450%);
+
   }
 }
 
@@ -64,4 +65,5 @@
 
 
 
-
+//shape-outside: polygon(50% 4%, 100% -4%, 100% 100%, 28% 100%);
+//    clip-path: polygon(50% 4%, 100% -4%, 100% 100%, 28% 100%);
