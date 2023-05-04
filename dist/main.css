@@ -2809,7 +2809,7 @@ body.modal_open {
   }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 991px) {
   .menu {
     text-align: left;
     flex-direction: column;
@@ -2870,9 +2870,7 @@ body.modal_open {
   .menu .dropdown > .menu__link:before {
     display: none;
   }
-}
 
-@media only screen and (max-width: 991px) {
   .swiper-horizontal > .swiper-pagination-bullets {
     display: block;
     bottom: 0;
