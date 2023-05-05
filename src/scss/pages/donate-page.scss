@@ -118,3 +118,78 @@
     }
   }
 }
+
+@include respond-to($sm) {
+  .donate-page {
+    .d-flex {
+      flex-wrap: wrap;
+    }
+
+    .section-banner__slogan {
+      padding-right: 0;
+      font-size: 42px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .section-banner {
+      width: 100%;
+      padding-bottom: 80px;
+
+      &:before {
+        width: 100vw;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .section-bank-info {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@include respond-to($xs) {
+  .donate-page {
+    .btn_submit {
+      font-size: 20px;
+      padding: 7px 11px;
+    }
+
+    .section__title {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .section-banner {
+      padding-bottom: 60px;
+
+      &__slogan {
+        font-size: 32px;
+        max-width: 290px;
+      }
+    }
+  }
+  .section-bank-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .bank-details {
+    font-size: 16px;
+  }
+  .form-bank-info {
+    margin: 0 auto;
+  }
+  .form-donate {
+    .input{
+      padding: 7px 16px 8px;
+      font-size: 16px;
+    }
+    h3 {
+      display: none;
+    }
+  }
+
+}

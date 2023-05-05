@@ -2895,7 +2895,7 @@ body.modal_open {
   }
 
   .main {
-    padding-top: 100px;
+    padding-top: 97px;
   }
 
   .menu__item {
@@ -2969,6 +2969,7 @@ body.modal_open {
     font: 400 22px/1.2 "Arial", sans-serif;
   }
 
+  .section__title,
   .page__title {
     font-size: 45px;
   }
@@ -3316,6 +3317,34 @@ body.modal_open {
   .awards__caption {
     font-size: 23px;
   }
+
+  .donate-page .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .donate-page .section-banner__slogan {
+    padding-right: 0;
+    font-size: 42px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .donate-page .section-banner {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+
+  .donate-page .section-banner:before {
+    width: 100vw;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-bank-info {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -3345,6 +3374,11 @@ body.modal_open {
 
   .section {
     padding-bottom: 60px;
+  }
+
+  .section__title {
+    font-size: 32px;
+    margin-bottom: 30px;
   }
 
   .menu__item {
@@ -3396,6 +3430,11 @@ body.modal_open {
   .post_lg .post__title {
     font-size: 22px;
     margin-bottom: 25px;
+  }
+
+  .input {
+    padding: 7px 16px 8px;
+    font-size: 16px;
   }
 
   .container {
@@ -3538,5 +3577,47 @@ body.modal_open {
   .article .section__title {
     font-size: 22px;
     text-align: center;
+  }
+
+  .donate-page .btn_submit {
+    font-size: 20px;
+    padding: 7px 11px;
+  }
+
+  .donate-page .section__title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .donate-page .section-banner {
+    padding-bottom: 60px;
+  }
+
+  .donate-page .section-banner__slogan {
+    font-size: 32px;
+    max-width: 290px;
+  }
+
+  .section-bank-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .bank-details {
+    font-size: 16px;
+  }
+
+  .form-bank-info {
+    margin: 0 auto;
+  }
+
+  .form-donate .input {
+    padding: 7px 16px 8px;
+    font-size: 16px;
+  }
+
+  .form-donate h3 {
+    display: none;
   }
 }

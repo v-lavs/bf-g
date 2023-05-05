@@ -236,7 +236,7 @@ body {
     max-width: 740px;
   }
   .main {
-    padding-top: 100px;
+    padding-top: 97px;
   }
 }
 
@@ -244,6 +244,7 @@ body {
   body {
     font: 400 22px/1.2 $main-font;
   }
+  .section__title,
   .page__title {
     font-size: 45px;
   }
@@ -277,6 +278,10 @@ body {
   }
   .section{
     padding-bottom: 60px;
+    &__title{
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
   }
 }
 

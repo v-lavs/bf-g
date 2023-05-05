@@ -24,3 +24,9 @@
   width: 100%;
 }
 
+@include respond-to($xs){
+  .input{
+    padding: 7px 16px 8px;
+    font-size: 16px;
+  }
+}
