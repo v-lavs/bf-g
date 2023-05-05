@@ -1176,7 +1176,6 @@ body.modal_open {
 }
 
 .dynamic-content p {
-  font-size: 32px;
   margin-bottom: 1.25em;
 }
 
@@ -1274,6 +1273,7 @@ body.modal_open {
 }
 
 .page .section-banner__slogan {
+  width: auto;
   max-width: 100%;
 }
 
@@ -1578,9 +1578,12 @@ body.modal_open {
 }
 
 .post {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
   border-radius: 30px;
   width: 100%;
+  height: 100%;
 }
 
 .post__thumb {
@@ -1601,12 +1604,12 @@ body.modal_open {
   object-fit: cover;
 }
 
+.post .btn {
+  margin-top: auto;
+}
+
 .post__title {
   font-weight: 700;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .post_sm {
@@ -2671,7 +2674,7 @@ body.modal_open {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding-top: 44.55%;
+  padding-top: 55%;
   background-color: #000000;
 }
 
@@ -2879,6 +2882,7 @@ body.modal_open {
 
   .header {
     padding: 23px 0;
+    background-color: mediumslateblue;
   }
 
   .header__logo {
@@ -2891,25 +2895,90 @@ body.modal_open {
 }
 
 @media only screen and (max-width: 1220px) {
+  body {
+    font: 700 26px/1.2 "Arial", sans-serif;
+  }
+
+  .section__title,
+  .section-banner__slogan {
+    font-size: 48px;
+  }
+
+  .page__title {
+    font-size: 58px;
+  }
+
+  .charity__list .post__item {
+    max-width: 740px;
+  }
+
   .menu__item {
     font-size: 18px;
   }
 
+  .post_lg .post__title {
+    font-size: 34px;
+  }
+
+  .post_md .post__title {
+    font-size: 26px;
+  }
+
+  .content__box {
+    max-width: 930px;
+  }
+
   .header {
-    background-color: lightgreen;
+    background: navajowhite;
   }
 
   .header__logo {
     max-width: 210px;
   }
 
-  .header__lang {
-    font-size: 16px;
+  .header__lang-link {
     margin-right: 15px;
   }
 
-  .header__lang:last-child {
+  .header__lang-link:last-child {
     margin-right: 0;
+  }
+
+  .header__lang {
+    font-size: 16px;
+  }
+
+  .social-assistance .description {
+    font-size: 30px;
+  }
+
+  .referral__header h2 {
+    font-size: 80px;
+  }
+
+  .referral-card {
+    font-size: 30px;
+  }
+
+  .referral-card h3 {
+    font-size: 30px;
+  }
+
+  .mission-page .mission-card__content h3 {
+    font-size: 42px;
+  }
+
+  .mission-page .mission-card__content {
+    padding-left: 18px;
+  }
+
+  .mission-card {
+    margin-bottom: 0;
+  }
+
+  .awards__caption {
+    font-size: 28px;
+    text-align: center;
   }
 }
 
@@ -2985,6 +3054,14 @@ body.modal_open {
     bottom: 0;
   }
 
+  .content__box {
+    max-width: 680px;
+  }
+
+  .header {
+    background-color: lightgreen;
+  }
+
   .header__nav {
     position: fixed;
     left: 0;
@@ -3022,14 +3099,6 @@ body.modal_open {
     margin-right: 0;
   }
 
-  .header__lang-link {
-    margin-right: 15px;
-  }
-
-  .header__lang-link:last-child {
-    margin-right: 0;
-  }
-
   .section-valuables {
     padding-bottom: 60px;
   }
@@ -3049,6 +3118,10 @@ body.modal_open {
 }
 
 @media only screen and (max-width: 767px) {
+  .header {
+    background-color: burlywood;
+  }
+
   .advantages .swiper-slide {
     width: 100%;
   }
@@ -3070,6 +3143,7 @@ body.modal_open {
   .header {
     padding-top: 15px;
     padding-bottom: 30px;
+    background-color: fuchsia;
   }
 
   .header .container {

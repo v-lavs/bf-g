@@ -81,3 +81,19 @@
     margin-bottom: 60px;
   }
 }
+
+@include respond-to($lg) {
+  .social-assistance .description {
+    font-size: 30px;
+  }
+  .referral__header h2 {
+    font-size: 80px;
+  }
+  .referral-card {
+    font-size: 30px;
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+}

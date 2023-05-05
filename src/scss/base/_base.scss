@@ -14,13 +14,6 @@ body {
   }
 }
 
-.wrapper {
-  //width: 100%;
-  //height: 100%;
-  //display: flex;
-  //flex-direction: column;
-}
-
 .hide {
   position: absolute;
   width: 1px;
@@ -68,7 +61,7 @@ body {
 
 .dynamic-content {
   p {
-    font-size: 32px;
+    //font-size: 32px;
     margin-bottom: 1.25em;
 
     &:last-child {
@@ -166,6 +159,7 @@ body {
     }
 
     &__slogan {
+      width: auto;
       max-width: 100%;
     }
 
@@ -222,6 +216,26 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+}
+
+@include respond-to($lg) {
+  body {
+    font: 700 26px/1.2 $main-font;
+  }
+  .section__title,
+  .section-banner__slogan {
+    font-size: 48px;
+  }
+  .page__title {
+    font-size: 58px;
+  }
+  .charity__list .post__item {
+    max-width: 740px;
+  }
+}
+
+@include respond-to($md) {
+
 }
 
 

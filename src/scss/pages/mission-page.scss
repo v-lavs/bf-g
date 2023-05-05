@@ -108,3 +108,17 @@
     }
   }
 }
+
+@include respond-to($lg) {
+  .mission-page {
+    .mission-card__content h3 {
+      font-size: 42px;
+    }
+    .mission-card__content {
+      padding-left: 18px;
+    }
+  }
+  .mission-card {
+    margin-bottom: 0;
+  }
+}

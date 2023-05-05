@@ -35,4 +35,11 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @include respond-to($lg) {
+    max-width: 930px;
+  }
+  @include respond-to($md) {
+    max-width: 680px;
+  }
+
 }

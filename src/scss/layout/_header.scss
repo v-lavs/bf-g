@@ -142,7 +142,7 @@
 @include respond-to($xl) {
   .header {
     padding: 23px 0;
-
+    background-color: mediumslateblue;
     &__logo {
       max-width: 260px;
     }
@@ -151,24 +151,28 @@
 
 @include respond-to($lg) {
   .header {
-    background-color: lightgreen;
-
+    background: navajowhite;
     &__logo {
       max-width: 210px;
     }
-
-    &__lang {
-      font-size: 16px;
+   &__lang-link {
       margin-right: 15px;
-
-      &:last-child {
+      &:last-child{
         margin-right: 0;
       }
+    }
+    &__lang {
+      font-size: 16px;
     }
   }
 }
 
 @include respond-to($md) {
+
+  .header{
+    background-color: lightgreen;
+  }
+
   .header__nav {
     position: fixed;
     left: 0;
@@ -204,18 +208,19 @@
     margin-left: auto;
     margin-right: 0;
   }
-  .header__lang-link {
-    margin-right: 15px;
-    &:last-child{
-      margin-right: 0;
-    }
+
+}
+@include respond-to($sm) {
+  .header{
+    background-color: burlywood;
   }
 }
-
 @include respond-to($xs) {
   .header {
     padding-top: 15px;
     padding-bottom: 30px;
+
+    background-color: fuchsia;
     .container {
       flex-wrap: wrap;
     }

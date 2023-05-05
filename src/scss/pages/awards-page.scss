@@ -29,3 +29,10 @@
 .awards__caption {
   font-size: 32px;
 }
+
+@include respond-to($lg){
+  .awards__caption {
+    font-size: 28px;
+    text-align: center;
+  }
+}
