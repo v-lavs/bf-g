@@ -2581,14 +2581,6 @@ body.modal_open {
   overflow: hidden;
 }
 
-.single-article .breadcrumb__item.active {
-  width: 50%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: 700;
-}
-
 .single-article .section__title {
   margin-bottom: 40px;
   text-align: left;
@@ -2628,7 +2620,6 @@ body.modal_open {
 
 .post-data {
   position: relative;
-  font-weight: 400;
   font-size: 24px;
   padding-bottom: 60px;
   padding-left: 57px;
@@ -3205,6 +3196,14 @@ body.modal_open {
     width: 50%;
     margin-bottom: 30px;
   }
+
+  .article {
+    margin-bottom: 80px;
+  }
+
+  .section-gallery {
+    margin-bottom: 80px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3318,6 +3317,14 @@ body.modal_open {
     font-size: 23px;
   }
 
+  .article {
+    margin-bottom: 60px;
+  }
+
+  .section-gallery {
+    margin-bottom: 60px;
+  }
+
   .donate-page .d-flex {
     flex-wrap: wrap;
   }
@@ -3381,6 +3388,11 @@ body.modal_open {
     margin-bottom: 30px;
   }
 
+  .dynamic-content blockquote {
+    padding: 15px 0;
+    margin-bottom: 30px;
+  }
+
   .menu__item {
     font-size: 15px;
   }
@@ -3430,6 +3442,12 @@ body.modal_open {
   .post_lg .post__title {
     font-size: 22px;
     margin-bottom: 25px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 21px;
+    height: 14px;
   }
 
   .input {
@@ -3577,6 +3595,52 @@ body.modal_open {
   .article .section__title {
     font-size: 22px;
     text-align: center;
+  }
+
+  .article {
+    margin-bottom: 30px;
+  }
+
+  .article__banner {
+    padding-bottom: 20px;
+  }
+
+  .post-data {
+    font-size: 12px;
+    padding-bottom: 33px;
+    padding-left: 30px;
+  }
+
+  .post-data:before {
+    width: 20px;
+    height: 20px;
+    top: -5px;
+  }
+
+  .section-video {
+    margin-bottom: 30px;
+    padding: 30px 0;
+    background: linear-gradient(180deg, #0087B5 0%, #01A9F0 100%);
+  }
+
+  .section-gallery {
+    padding: 30px 0;
+  }
+
+  .slider-gallery {
+    padding-bottom: 40px;
+  }
+
+  .slider-gallery__wrap-img {
+    padding-top: 98.25%;
+  }
+
+  .single-article .section__title {
+    margin-bottom: 30px;
+  }
+
+  .related-post__item {
+    width: 100%;
   }
 
   .donate-page .btn_submit {

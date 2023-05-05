@@ -61,3 +61,11 @@
     bottom: 0;
   }
 }
+
+@include respond-to($xs) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 21px;
+    height: 14px;
+  }
+}
