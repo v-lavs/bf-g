@@ -1,44 +1,66 @@
-.section-valuables{
+.section-valuables {
   padding-bottom: 90px;
 
-  .swiper-wrapper{
+  .swiper-wrapper {
     justify-content: space-between;
   }
-  .valuables{
+
+  .valuables {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    
-    &__card{
+
+    &__card {
       width: 29%;
     }
-    &__text{
+
+    &__text {
       font-size: 32px;
       text-align: center;
       color: #00ADF1;
     }
-    &__icon{
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size:contain;
-      max-width: 198px;
-      padding-top: 54.25%;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 198px;
+      height: 208px;
       margin: 0 auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
 
-@include respond-to($sm){
-  .section-valuables{
-    padding-bottom: 60px;
-    .swiper-wrapper{
-      justify-content: flex-start;
-    }
-    .valuables{
-      padding-bottom: 38px;
+@include respond-to($md) {
+  .section-valuables {
+    .valuables__text {
+      font-size: 24px;
     }
   }
-  .swiper-horizontal > .swiper-pagination-bullets{
+}
+
+@include respond-to($sm) {
+  .section-valuables {
+    padding-bottom: 60px;
+
+    .swiper-wrapper {
+      justify-content: flex-start;
+    }
+
+    .valuables {
+      padding-bottom: 38px;
+    }
+
+    .valuables__text {
+      font-size: 32px;
+    }
+  }
+  .swiper-horizontal > .swiper-pagination-bullets {
     display: block;
     bottom: 0;
   }

@@ -41,5 +41,11 @@
   @include respond-to($md) {
     max-width: 680px;
   }
+  @include respond-to($sm) {
+    max-width: 530px;
+  }
+  @include respond-to($xs) {
+    max-width: 375px;
+  }
 
 }

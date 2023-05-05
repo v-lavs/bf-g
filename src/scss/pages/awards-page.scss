@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 35px;
   margin-bottom: 30px;
 }
 
@@ -36,3 +37,34 @@
     text-align: center;
   }
 }
+
+  @include respond-to($md){
+    .awards__caption {
+      font-size: 20px;
+    }
+  }
+  @include respond-to($sm){
+    .awards-list__item  {
+      width: 100%;
+    }
+    .awards__caption {
+      font-size: 23px;
+    }
+  }
+  @include respond-to($xs){
+    .awards-list{
+      display: block;
+    }
+    .awards__caption {
+      font-size: 19px;
+    }
+    .awards__item{
+      padding: 30px 13px;
+    }
+    .awards__thumb {
+      margin-bottom: 20px;
+    }
+    .awards-list__item {
+      margin-bottom: 30px;
+    }
+  }

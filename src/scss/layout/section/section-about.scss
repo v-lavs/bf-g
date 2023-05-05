@@ -41,3 +41,36 @@
     left: auto;
   }
 }
+
+@include respond-to($sm) {
+  .section-about {
+    text-align: center;
+
+    .section__content {
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto 0px;
+    }
+
+    .d-flex {
+      flex-wrap: wrap;
+    }
+    .part_right,
+    .part_left {
+      width: 100%;
+      order: 2;
+    }
+
+    .section__img {
+      display: flex;
+      justify-content: center;
+      order: 1;
+      min-height: 0;
+      img {
+        left: 0;
+        width: 60vw;
+        position: relative;
+      }
+    }
+  }
+}

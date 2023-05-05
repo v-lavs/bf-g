@@ -8,14 +8,15 @@
 
 // CUSTOM SCRIPTS
 
-function destroySwiper(sliderInstance) {
-    if (sliderInstance instanceof Swiper && sliderInstance.initialized) {
-        sliderInstance.destroy(true, true);
-        console.log('destroy')
-    }
-}
+
 
 $(document).ready(function () {
+    function destroySwiper(sliderInstance) {
+        if (sliderInstance instanceof Swiper && sliderInstance.initialized) {
+            sliderInstance.destroy(true, true);
+            console.log('destroy')
+        }
+    }
 
     // MOBILE MENU
     const nav = $('.header__nav');
@@ -139,7 +140,8 @@ $(document).ready(function () {
                 });
             }
         } else {
-            destroySwiper(valuablesSlider, true);
+            console.log(valuablesSlider)
+            destroySwiper(valuablesSlider);
             valuablesSlider = null;
         }
 

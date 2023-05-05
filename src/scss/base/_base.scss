@@ -236,11 +236,30 @@ body {
   .charity__list .post__item {
     max-width: 740px;
   }
+  .main {
+    padding-top: 100px;
+  }
 }
 
 @include respond-to($md) {
   body {
     font: 700 22px/1.2 $main-font;
+  }
+}
+
+@include respond-to($xs) {
+  .page {
+    padding-bottom: 60px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    .pagination .prev,
+    .pagination .next {
+      width: 21px;
+      height: 14px;
+    }
   }
 }
 
