@@ -14,7 +14,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 216px;
+        max-width: 216px;
+        width: 30%;
         height: 216px;
         left: 50%;
         top: 50%;
@@ -110,15 +111,94 @@
 }
 
 @include respond-to($lg) {
+  .mission-card {
+    margin-bottom: 0;
+  }
+  .mission-card__content h3 {
+    font-size: 42px;
+  }
+
+  .mission-card__content {
+    padding-left: 18px;
+  }
+}
+
+@include respond-to($md) {
   .mission-page {
-    .mission-card__content h3 {
-      font-size: 42px;
+    .section-banner {
+      text-align: center;
+
+      .container {
+        flex-wrap: wrap;
+      }
+
+      .part_left {
+        width: 100%;
+      }
+
+      img {
+        position: relative;
+      }
+
+      .wrap-img {
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 60px;
+        position: relative;
+        overflow: hidden;
+        left: 0;
+        order: -1;
+      }
     }
-    .mission-card__content {
-      padding-left: 18px;
+
+    .section-banner__slogan {
+
+      font-size: 32px;
     }
   }
   .mission-card {
-    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+  .mission-card:nth-child(even) {
+    padding-bottom: 60px;
+    padding-top: 50px;
+  }
+}
+
+@include respond-to($xs) {
+  .mission-page {
+    .section-banner__slogan {
+      font-size: 32px;
+    }
+
+    .section-banner .wrap-img {
+      margin-bottom: 30px;
+    }
+  }
+  .mission-card {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .mission-card__content {
+    padding-left: 0;
+
+    P {
+      margin-bottom: 26px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+  .mission-card__icon {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto 30px;
+    min-height: 155px;
+    background-position: center;
   }
 }

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font: 700 32px/1.2 $main-font;
+  font: 400 32px/1.2 $main-font;
   background-color: #FFFFFF;
   color: #02628C;
   letter-spacing: -0.03em;
@@ -65,7 +65,6 @@ body {
 
 .dynamic-content {
   p {
-    //font-size: 32px;
     margin-bottom: 1.25em;
 
     &:last-child {
@@ -224,7 +223,7 @@ body {
 
 @include respond-to($lg) {
   body {
-    font: 700 26px/1.2 $main-font;
+    font: 400 26px/1.2 $main-font;
   }
   .section__title,
   .section-banner__slogan {
@@ -243,10 +242,13 @@ body {
 
 @include respond-to($md) {
   body {
-    font: 700 22px/1.2 $main-font;
+    font: 400 22px/1.2 $main-font;
   }
   .page__title {
     font-size: 45px;
+  }
+  .page{
+    padding-bottom: 80px;
   }
 }
 

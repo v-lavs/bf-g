@@ -118,10 +118,12 @@
     .section-banner .container {
       min-height: 434px;
     }
+
+    .section-banner__slogan {
+      font-size: 28px;
+    }
   }
-  .page .section-banner__slogan {
-    font-size: 28px;
-  }
+
   .referral__header h2 {
     font-size: 50px;
   }
@@ -138,10 +140,12 @@
       padding-bottom: 60px;
       padding-top: 0;
     }
+
+    .section-banner__slogan {
+      font-size: 22px;
+    }
   }
-  .page .section-banner__slogan {
-    font-size: 22px;
-  }
+
   .referral__header {
     min-height: 111px;
     padding-bottom: 30px;

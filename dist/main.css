@@ -1119,7 +1119,7 @@ html {
 }
 
 body {
-  font: 700 32px/1.2 "Arial", sans-serif;
+  font: 400 32px/1.2 "Arial", sans-serif;
   background-color: #FFFFFF;
   color: #02628C;
   letter-spacing: -0.03em;
@@ -2454,7 +2454,8 @@ body.modal_open {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 216px;
+  max-width: 216px;
+  width: 30%;
   height: 216px;
   left: 50%;
   top: 50%;
@@ -2877,7 +2878,7 @@ body.modal_open {
 
 @media only screen and (max-width: 1220px) {
   body {
-    font: 700 26px/1.2 "Arial", sans-serif;
+    font: 400 26px/1.2 "Arial", sans-serif;
   }
 
   .section__title,
@@ -2945,16 +2946,16 @@ body.modal_open {
     font-size: 30px;
   }
 
-  .mission-page .mission-card__content h3 {
+  .mission-card {
+    margin-bottom: 0;
+  }
+
+  .mission-card__content h3 {
     font-size: 42px;
   }
 
-  .mission-page .mission-card__content {
+  .mission-card__content {
     padding-left: 18px;
-  }
-
-  .mission-card {
-    margin-bottom: 0;
   }
 
   .awards__caption {
@@ -2965,11 +2966,15 @@ body.modal_open {
 
 @media only screen and (max-width: 991px) {
   body {
-    font: 700 22px/1.2 "Arial", sans-serif;
+    font: 400 22px/1.2 "Arial", sans-serif;
   }
 
   .page__title {
     font-size: 45px;
+  }
+
+  .page {
+    padding-bottom: 80px;
   }
 
   .menu {
@@ -3096,6 +3101,10 @@ body.modal_open {
     margin-bottom: 80px;
   }
 
+  .section-banner__text {
+    font-size: 22px;
+  }
+
   .home-banner {
     padding-top: 60px;
   }
@@ -3142,6 +3151,45 @@ body.modal_open {
 
   .referral-card h3 {
     margin-bottom: 30px;
+  }
+
+  .mission-page .section-banner {
+    text-align: center;
+  }
+
+  .mission-page .section-banner .container {
+    flex-wrap: wrap;
+  }
+
+  .mission-page .section-banner .part_left {
+    width: 100%;
+  }
+
+  .mission-page .section-banner img {
+    position: relative;
+  }
+
+  .mission-page .section-banner .wrap-img {
+    width: 100%;
+    min-height: 0;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    order: -1;
+  }
+
+  .mission-page .section-banner__slogan {
+    font-size: 32px;
+  }
+
+  .mission-card {
+    padding-bottom: 30px;
+  }
+
+  .mission-card:nth-child(even) {
+    padding-bottom: 60px;
+    padding-top: 50px;
   }
 
   .awards__caption {
@@ -3253,7 +3301,7 @@ body.modal_open {
     min-height: 434px;
   }
 
-  .page .section-banner__slogan {
+  .social-assistance .section-banner__slogan {
     font-size: 28px;
   }
 
@@ -3384,6 +3432,14 @@ body.modal_open {
     font-size: 15px;
   }
 
+  .section-banner {
+    margin-bottom: 80px;
+  }
+
+  .section-banner .section-banner__text {
+    margin-top: 30px;
+  }
+
   .social-assistance .section-banner .container {
     min-height: 255px;
   }
@@ -3394,7 +3450,7 @@ body.modal_open {
     padding-top: 0;
   }
 
-  .page .section-banner__slogan {
+  .social-assistance .section-banner__slogan {
     font-size: 22px;
   }
 
@@ -3419,6 +3475,44 @@ body.modal_open {
   .referral-card h3 {
     font-size: 22px;
     margin-bottom: 30px;
+  }
+
+  .mission-page .section-banner__slogan {
+    font-size: 32px;
+  }
+
+  .mission-page .section-banner .wrap-img {
+    margin-bottom: 30px;
+  }
+
+  .mission-card {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .mission-card .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-card__content {
+    padding-left: 0;
+  }
+
+  .mission-card__content P {
+    margin-bottom: 26px;
+  }
+
+  .mission-card__content h3 {
+    font-size: 30px;
+  }
+
+  .mission-card__icon {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto 30px;
+    min-height: 155px;
+    background-position: center;
   }
 
   .awards-list {
