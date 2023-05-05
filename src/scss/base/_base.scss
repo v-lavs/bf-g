@@ -14,6 +14,10 @@ body {
   }
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .hide {
   position: absolute;
   width: 1px;
@@ -235,7 +239,9 @@ body {
 }
 
 @include respond-to($md) {
-
+  body {
+    font: 700 22px/1.2 $main-font;
+  }
 }
 
 

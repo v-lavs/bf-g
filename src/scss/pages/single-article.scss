@@ -14,7 +14,8 @@
 
     }
   }
-  .section__title{
+
+  .section__title {
     margin-bottom: 40px;
     text-align: left;
   }
@@ -89,6 +90,7 @@
   margin: 0 auto;
   padding-top: 55%;
   background-color: #000000;
+
   iframe,
   &__poster {
     position: absolute;
@@ -106,6 +108,7 @@
   background: linear-gradient(180deg, #0087B5 0%, #01A9F0 100%);
   padding: 60px 0;
   margin-bottom: 120px;
+
   .section__title {
     color: #FFFFFF;
   }
@@ -124,6 +127,9 @@
       position: absolute;
       content: '';
       background-image: url(../assets/img/img-gal-overlay.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       left: 0;
       top: 0;
       right: 0;
@@ -152,7 +158,26 @@
 
 .related-post__item {
   width: 25%;
+
   .post {
     max-width: none;
+  }
+}
+
+@include respond-to($md) {
+  .related-post-list {
+    flex-wrap: wrap;
+  }
+  .related-post__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+
+@include respond-to($xs) {
+  .article .section__title {
+    font-size: 22px;
+    text-align: center;
   }
 }

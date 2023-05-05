@@ -1130,6 +1130,10 @@ body.modal_open {
   height: 100%;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .hide {
   position: absolute;
   width: 1px;
@@ -2715,6 +2719,9 @@ body.modal_open {
   position: absolute;
   content: '';
   background-image: url(../assets/img/img-gal-overlay.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   left: 0;
   top: 0;
   right: 0;
@@ -2983,6 +2990,10 @@ body.modal_open {
 }
 
 @media only screen and (max-width: 991px) {
+  body {
+    font: 700 22px/1.2 "Arial", sans-serif;
+  }
+
   .menu {
     text-align: left;
     flex-direction: column;
@@ -3115,6 +3126,15 @@ body.modal_open {
     display: block;
     bottom: 0;
   }
+
+  .related-post-list {
+    flex-wrap: wrap;
+  }
+
+  .related-post__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3164,5 +3184,10 @@ body.modal_open {
 
   .header__contacts-mob {
     font-size: 15px;
+  }
+
+  .article .section__title {
+    font-size: 22px;
+    text-align: center;
   }
 }
