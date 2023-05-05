@@ -28,7 +28,7 @@
   }
 }
 
-@include respond-to($md){
+@include respond-to($sm){
   .section-valuables{
     padding-bottom: 60px;
     .swiper-wrapper{

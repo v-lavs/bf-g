@@ -121,7 +121,7 @@ $(document).ready(function () {
 
         // DESTROY SLIDER INSTANCES
 
-        if ($(window).outerWidth() <= 991) {
+        if ($(window).outerWidth() <= 767) {
             if (!valuablesSlider) {
                 valuablesSlider = new Swiper('.valuables', {
                     breakpoints: {
@@ -129,7 +129,7 @@ $(document).ready(function () {
                             slidesPerView: 1,
                         },
 
-                        640: {
+                        540: {
                             slidesPerView: 2,
                         }
                     },
@@ -143,7 +143,7 @@ $(document).ready(function () {
             valuablesSlider = null;
         }
 
-        if ($(window).outerWidth() <= 768) {
+        if ($(window).outerWidth() <= 767) {
             if (!advantagesSlider) {
                 valuablesSlider = new Swiper('.advantages', {
                     breakpoints: {

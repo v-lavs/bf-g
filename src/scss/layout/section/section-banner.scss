@@ -22,7 +22,6 @@
   }
 
   &__slogan {
-    //max-width: 505px;
     width: 45%;
     font-weight: 700;
     font-size: 55px;
@@ -49,10 +48,10 @@
   }
 
   .img-home-banner {
-    right: 0;
     max-width: 1033px;
     -webkit-mask-size: cover;
     mask-size: cover;
+    mask-position: center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-image: url(../assets/img/banner-mask-2.png);
@@ -61,69 +60,49 @@
   }
 }
 
-.ui-kit {
-  .section-banner {
 
-    &__slogan {
-      max-width: 545px;
-      width: auto;
-    }
+.home-banner {
+  position: relative;
 
-    img {
-      position: relative;
-      display: block;
-    }
-
-    .img-home-banner {
-      max-width: 1033px;
-      -webkit-mask-image: url(../assets/img/banner-mask-2.png);
-      mask-image: url(../assets/img/banner-mask-2.png);
-      filter: sepia(300%) hue-rotate(150deg) saturate(450%);
-
-
-      width: 100%;
-      height: 100%;
-      -webkit-mask-size: 100% 100%;
-      -webkit-mask-repeat: no-repeat;
-      transform: translateX(22%);
-    }
-
-  }
-
-  .section-banner .container {
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+  .section-banner__slogan {
+    width: 560px;
   }
 
   .section-banner__wrap-img {
-    grid-area: 1 / 5 / 6 / 16;
-    position: static;
+    display: flex;
+    padding-left: 420px;
 
-    background: lightblue
-  }
-
-  .part_left {
-    grid-area: 1 / 1 / 6 / 8;
-    width: auto;
-  }
-
-  @include respond-to($xxl) {
-    .section-banner .img-home-banner {
-      transform: translateX(60px);
-    }
-  }
-  @include respond-to($xl) {
-    .section-banner .img-home-banner {
-      transform: none;
+    img {
+      position: relative;
+      margin-left: auto;
     }
   }
 
+  @include respond-to($md) {
+    padding-top: 60px;
+    .container {
+      min-height: 0;
+    }
+
+    .section-banner__slogan {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    .section-banner__wrap-img {
+      position: relative;
+      padding: 0;
+      width: 60%;
+      margin: 0 auto 60px;
+    }
+
+    .img-home-banner {
+      width: 100%;
+      max-width: none;
+    }
+  }
 }
-
-
 
 
 
