@@ -24,7 +24,7 @@ $(document).ready(function () {
         e.preventDefault();
         nav.toggleClass('open');
         $(this).toggleClass('open');
-        jQuery('.backdrop').fadeIn();
+        jQuery('.backdrop').fadeToggle();
     });
 
     $('.menu__link, .backdrop').click(function (e) {
