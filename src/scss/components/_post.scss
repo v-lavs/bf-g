@@ -26,6 +26,7 @@
 
   .btn {
     margin-top: auto;
+    width: min-content;
   }
 
   &__title {
@@ -93,6 +94,61 @@
   .post_md {
     .post__title {
       font-size: 26px;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .post_md .post__title {
+    font-size: 22px;
+  }
+}
+
+@include respond-to($sm) {
+  .post__item {
+    width: 100%;
+  }
+
+  .post_md {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .post_lg {
+    padding: 40px 50px;
+  }
+  .post_lg .post__title {
+    font-size: 28px;
+  }
+}
+
+@include respond-to($xs) {
+  .post__list {
+    display: block;
+  }
+  .post__item {
+    margin-bottom: 30px;
+  }
+  .post_lg,
+  .post_md {
+    padding: 10px 10px 30px;
+
+    .post__footer {
+      text-align: center;
+    }
+  }
+  .post_lg {
+    text-align: center;
+
+    .post__thumb {
+      margin-bottom: 25px;
+    }
+
+    .post__title {
+      font-size: 22px;
+      margin-bottom: 25px;
     }
   }
 }

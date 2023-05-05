@@ -1610,6 +1610,7 @@ body.modal_open {
 
 .post .btn {
   margin-top: auto;
+  width: min-content;
 }
 
 .post__title {
@@ -2973,6 +2974,10 @@ body.modal_open {
     font: 700 22px/1.2 "Arial", sans-serif;
   }
 
+  .page__title {
+    font-size: 45px;
+  }
+
   .menu {
     text-align: left;
     flex-direction: column;
@@ -3037,6 +3042,10 @@ body.modal_open {
 
   .menu .dropdown > .menu__link:before {
     display: none;
+  }
+
+  .post_md .post__title {
+    font-size: 22px;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets {
@@ -3134,6 +3143,26 @@ body.modal_open {
 }
 
 @media only screen and (max-width: 767px) {
+  .post__item {
+    width: 100%;
+  }
+
+  .post_md {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .post_lg {
+    padding: 40px 50px;
+  }
+
+  .post_lg .post__title {
+    font-size: 28px;
+  }
+
   .content__box {
     max-width: 530px;
   }
@@ -3220,6 +3249,7 @@ body.modal_open {
 
   .page__title {
     font-size: 32px;
+    margin-bottom: 40px;
   }
 
   .page .pagination .prev,
@@ -3228,13 +3258,60 @@ body.modal_open {
     height: 14px;
   }
 
+  .page-bg {
+    background-position: 11% top;
+    background-size: auto;
+  }
+
   .menu__item {
     font-size: 15px;
+  }
+
+  .btn_md {
+    width: 100%;
+    min-width: 0;
+    font-size: 22px;
+    border-radius: 5px;
+  }
+
+  .btn_sm {
+    font-size: 22px;
   }
 
   .breadcrumb {
     font-size: 12px;
     margin-bottom: 40px;
+  }
+
+  .post__list {
+    display: block;
+  }
+
+  .post__item {
+    margin-bottom: 30px;
+  }
+
+  .post_lg,
+  .post_md {
+    padding: 10px 10px 30px;
+  }
+
+  .post_lg .post__footer,
+  .post_md .post__footer {
+    text-align: center;
+  }
+
+  .post_lg {
+    text-align: center;
+  }
+
+  .post_lg .post__thumb {
+    margin-bottom: 25px;
+  }
+
+  .post_lg .post__title {
+    font-size: 22px;
+    margin-bottom: 25px;
   }
 
   .container {

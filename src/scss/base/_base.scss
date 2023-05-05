@@ -245,6 +245,9 @@ body {
   body {
     font: 700 22px/1.2 $main-font;
   }
+  .page__title{
+    font-size: 45px;
+  }
 }
 
 @include respond-to($xs) {
@@ -253,6 +256,7 @@ body {
 
     &__title {
       font-size: 32px;
+      margin-bottom: 40px;
     }
 
     .pagination .prev,
@@ -260,6 +264,10 @@ body {
       width: 21px;
       height: 14px;
     }
+  }
+  .page-bg{
+    background-position: 11% top;
+    background-size: auto;
   }
 }
 

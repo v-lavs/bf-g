@@ -74,3 +74,15 @@
   z-index: 2;
 }
 
+@include respond-to($xs) {
+.btn_md{
+  width: 100%;
+  min-width: 0;
+  font-size: 22px;
+  border-radius: 5px;
+}
+  .btn_sm{
+    font-size: 22px;
+  }
+}
+
