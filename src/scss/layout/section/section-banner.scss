@@ -60,7 +60,11 @@
   }
 }
 
-
+@include respond-to($md){
+  .section-banner {
+    margin-bottom: 80px;
+  }
+}
 .home-banner {
   position: relative;
 

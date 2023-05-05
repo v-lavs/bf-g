@@ -245,7 +245,7 @@ body {
   body {
     font: 700 22px/1.2 $main-font;
   }
-  .page__title{
+  .page__title {
     font-size: 45px;
   }
 }
@@ -253,6 +253,10 @@ body {
 @include respond-to($xs) {
   .page {
     padding-bottom: 60px;
+
+    .section-banner {
+      margin-bottom: 60px;
+    }
 
     &__title {
       font-size: 32px;
@@ -265,9 +269,12 @@ body {
       height: 14px;
     }
   }
-  .page-bg{
+  .page-bg {
     background-position: 11% top;
     background-size: auto;
+  }
+  .section{
+    padding-bottom: 60px;
   }
 }
 

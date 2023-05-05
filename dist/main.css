@@ -2344,10 +2344,6 @@ body.modal_open {
   padding-bottom: 120px;
 }
 
-.social-assistance .section-banner .wrap-img {
-  min-height: 567px;
-}
-
 .social-assistance .section-banner .container {
   min-height: 567px;
 }
@@ -2394,6 +2390,9 @@ body.modal_open {
 
 .referral__header:before {
   background-image: url(../assets/img/ref-overlay.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
 }
 
@@ -2404,7 +2403,6 @@ body.modal_open {
 
 .referral-card {
   font-weight: 400;
-  font-size: 36px;
   padding: 60px 0 0;
 }
 
@@ -2940,11 +2938,7 @@ body.modal_open {
   }
 
   .referral__header h2 {
-    font-size: 80px;
-  }
-
-  .referral-card {
-    font-size: 30px;
+    font-size: 66px;
   }
 
   .referral-card h3 {
@@ -3098,6 +3092,10 @@ body.modal_open {
     margin-right: 0;
   }
 
+  .section-banner {
+    margin-bottom: 80px;
+  }
+
   .home-banner {
     padding-top: 60px;
   }
@@ -3126,6 +3124,24 @@ body.modal_open {
 
   .section-valuables .valuables__text {
     font-size: 24px;
+  }
+
+  .social-assistance .description {
+    font-size: 25px;
+    padding-bottom: 80px;
+  }
+
+  .referral {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  .referral__header {
+    min-height: 346px;
+  }
+
+  .referral-card h3 {
+    margin-bottom: 30px;
   }
 
   .awards__caption {
@@ -3233,6 +3249,18 @@ body.modal_open {
     justify-content: flex-start;
   }
 
+  .social-assistance .section-banner .container {
+    min-height: 434px;
+  }
+
+  .page .section-banner__slogan {
+    font-size: 28px;
+  }
+
+  .referral__header h2 {
+    font-size: 50px;
+  }
+
   .awards-list__item {
     width: 100%;
   }
@@ -3245,6 +3273,10 @@ body.modal_open {
 @media only screen and (max-width: 480px) {
   .page {
     padding-bottom: 60px;
+  }
+
+  .page .section-banner {
+    margin-bottom: 60px;
   }
 
   .page__title {
@@ -3261,6 +3293,10 @@ body.modal_open {
   .page-bg {
     background-position: 11% top;
     background-size: auto;
+  }
+
+  .section {
+    padding-bottom: 60px;
   }
 
   .menu__item {
@@ -3346,6 +3382,43 @@ body.modal_open {
 
   .header__contacts-mob {
     font-size: 15px;
+  }
+
+  .social-assistance .section-banner .container {
+    min-height: 255px;
+  }
+
+  .social-assistance .description {
+    font-size: 22px;
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+
+  .page .section-banner__slogan {
+    font-size: 22px;
+  }
+
+  .referral__header {
+    min-height: 111px;
+    padding-bottom: 30px;
+  }
+
+  .referral__header h2 {
+    font-size: 28px;
+  }
+
+  .referral {
+    padding-bottom: 60px;
+  }
+
+  .referral-card {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .referral-card h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
   }
 
   .awards-list {
