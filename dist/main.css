@@ -3009,6 +3009,7 @@ body.modal_open {
     max-width: 480px;
     width: 100%;
     overflow: auto;
+    max-height: 100%;
   }
 
   .header__nav.open {
