@@ -25,6 +25,7 @@ $(document).ready(function () {
         nav.toggleClass('open');
         $(this).toggleClass('open');
         jQuery('.backdrop').fadeToggle();
+        $('body').toggleClass('modal_open');
     });
 
     $('.menu__link, .backdrop').click(function (e) {
@@ -32,7 +33,7 @@ $(document).ready(function () {
         nav.removeClass('open');
         $('.sub-menu__toggle').removeClass('sub-menu__toggle_active')
         jQuery('.backdrop').fadeOut();
-
+        $('body').removeClass('modal_open');
     });
 
     $('.sub-menu__toggle').click(function (e) {
