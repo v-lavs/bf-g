@@ -36,9 +36,34 @@
 }
 
 .charity {
-  .section__img img{
+  .section__img img {
     right: 24px;
     left: auto;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .section-about {
+    .btn {
+      margin-top: 70px;
+    }
+
+    .section__img {
+      min-height: 0;
+      padding-top: 62%;
+    }
+  }
+}
+
+@include respond-to($md) {
+  .section-about {
+    .section__content {
+      padding-top: 50px;
+    }
+
+    .btn {
+      min-width: 340px;
+    }
   }
 }
 
@@ -49,12 +74,13 @@
     .section__content {
       max-width: 480px;
       width: 100%;
-      margin: 0 auto 0px;
+      margin: 0 auto 0;
     }
 
     .d-flex {
       flex-wrap: wrap;
     }
+
     .part_right,
     .part_left {
       width: 100%;
@@ -66,11 +92,30 @@
       justify-content: center;
       order: 1;
       min-height: 0;
+      padding: 0;
+
       img {
         left: 0;
         width: 60vw;
         position: relative;
       }
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .section-about {
+    .section__img img {
+      width: 100%;
+      max-width: 360px;
+    }
+    .section__content {
+      padding-top: 30px;
+    }
+    .btn_md {
+      min-width: 200px;
+      width: auto;
+      margin: 30px auto 0;
     }
   }
 }

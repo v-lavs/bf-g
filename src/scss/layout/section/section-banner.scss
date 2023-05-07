@@ -60,23 +60,28 @@
   }
 }
 
-@include respond-to($md){
+@include respond-to($md) {
   .section-banner {
-    margin-bottom: 80px;
-    &__text{
+    //margin-bottom: 80px;
+
+    &__text {
       font-size: 22px;
     }
+
   }
 }
 
-@include respond-to($xs){
+
+@include respond-to($xs) {
   .section-banner {
     margin-bottom: 80px;
+
     .section-banner__text {
       margin-top: 30px;
     }
   }
 }
+
 .home-banner {
   position: relative;
 
@@ -94,6 +99,11 @@
     }
   }
 
+  @include respond-to($lg) {
+    .section-banner__wrap-img img {
+      right: 130px;
+    }
+  }
   @include respond-to($md) {
     padding-top: 60px;
     .container {
@@ -111,11 +121,34 @@
       padding: 0;
       width: 60%;
       margin: 0 auto 60px;
+
+      img {
+        right: 0;
+      }
     }
+
 
     .img-home-banner {
       width: 100%;
       max-width: none;
+    }
+  }
+  @include respond-to($sm) {
+    .section-banner__wrap-img {
+      justify-content: center;
+    }
+    .img-home-banner {
+      -webkit-mask-image: url(../assets/img/mask-baner-mob1.png);
+      mask-image: url(../assets/img/mask-baner-mob1.png);
+    }
+  }
+  @include respond-to($xs) {
+    margin-bottom: 60px;
+    .section-banner__wrap-img {
+      margin-bottom: 40px;
+    }
+    .section-banner__slogan {
+      font-size: 22px;
     }
   }
 }

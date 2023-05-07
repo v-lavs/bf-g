@@ -252,7 +252,11 @@ body {
     padding-bottom: 80px;
   }
 }
-
+@include respond-to($sm) {
+  .section{
+    padding-bottom: 80px;
+  }
+}
 @include respond-to($xs) {
   .page {
     padding-bottom: 60px;

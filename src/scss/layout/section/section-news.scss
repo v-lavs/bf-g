@@ -15,6 +15,7 @@
 }
 
 @include respond-to($sm){
+
   .slider-news{
     .swiper-pagination{
       display: block!important;
@@ -23,5 +24,17 @@
     .swiper-button-prev{
       display: none;
     }
+  }
+}
+@include respond-to($xs){
+  .section-news{
+    background-image: url(../assets/img/bg-news-mob.jpg);
+  }
+  .section-news{
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+  .slider-news{
+    padding-bottom: 35px;
   }
 }

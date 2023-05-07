@@ -134,7 +134,7 @@
 
     .section-banner {
       width: 100%;
-      padding-bottom: 80px;
+     margin-bottom: 80px;
 
       &:before {
         width: 100vw;
@@ -147,6 +147,7 @@
   .section-bank-info {
     width: 100%;
     padding-left: 0;
+    margin-bottom: 80px;
   }
 }
 

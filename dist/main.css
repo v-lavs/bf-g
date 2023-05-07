@@ -1937,7 +1937,6 @@ body.modal_open {
 
 .footer-top {
   background-color: #00ADF1;
-  background-image: url("../assets/img/donate-bg-2.png");
   background-position: right bottom -72px;
   background-repeat: no-repeat;
   background-size: 33%;
@@ -2866,6 +2865,17 @@ body.modal_open {
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .section-about .btn {
+    margin-top: 70px;
+  }
+
+  .section-about .section__img {
+    min-height: 0;
+    padding-top: 62%;
+  }
+}
+
 @media only screen and (max-width: 1380px) {
   .container {
     max-width: 1280px;
@@ -2938,6 +2948,10 @@ body.modal_open {
 
   .header__lang {
     font-size: 16px;
+  }
+
+  .home-banner .section-banner__wrap-img img {
+    right: 130px;
   }
 
   .about-helps .post {
@@ -3114,10 +3128,6 @@ body.modal_open {
     margin-right: 0;
   }
 
-  .section-banner {
-    margin-bottom: 80px;
-  }
-
   .section-banner__text {
     font-size: 22px;
   }
@@ -3143,6 +3153,10 @@ body.modal_open {
     margin: 0 auto 60px;
   }
 
+  .home-banner .section-banner__wrap-img img {
+    right: 0;
+  }
+
   .home-banner .img-home-banner {
     width: 100%;
     max-width: none;
@@ -3150,6 +3164,14 @@ body.modal_open {
 
   .section-valuables .valuables__text {
     font-size: 24px;
+  }
+
+  .section-about .section__content {
+    padding-top: 50px;
+  }
+
+  .section-about .btn {
+    min-width: 340px;
   }
 
   .social-assistance .description {
@@ -3232,6 +3254,10 @@ body.modal_open {
 }
 
 @media only screen and (max-width: 767px) {
+  .section {
+    padding-bottom: 80px;
+  }
+
   .post__item {
     width: 100%;
   }
@@ -3270,6 +3296,15 @@ body.modal_open {
     background-color: burlywood;
   }
 
+  .home-banner .section-banner__wrap-img {
+    justify-content: center;
+  }
+
+  .home-banner .img-home-banner {
+    -webkit-mask-image: url(../assets/img/mask-baner-mob1.png);
+    mask-image: url(../assets/img/mask-baner-mob1.png);
+  }
+
   .section-valuables {
     padding-bottom: 60px;
   }
@@ -3302,7 +3337,7 @@ body.modal_open {
   .section-about .section__content {
     max-width: 480px;
     width: 100%;
-    margin: 0 auto 0px;
+    margin: 0 auto 0;
   }
 
   .section-about .d-flex {
@@ -3320,6 +3355,7 @@ body.modal_open {
     justify-content: center;
     order: 1;
     min-height: 0;
+    padding: 0;
   }
 
   .section-about .section__img img {
@@ -3408,7 +3444,7 @@ body.modal_open {
 
   .donate-page .section-banner {
     width: 100%;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .donate-page .section-banner:before {
@@ -3421,6 +3457,7 @@ body.modal_open {
   .section-bank-info {
     width: 100%;
     padding-left: 0;
+    margin-bottom: 80px;
   }
 }
 
@@ -3563,6 +3600,46 @@ body.modal_open {
 
   .section-banner .section-banner__text {
     margin-top: 30px;
+  }
+
+  .home-banner {
+    margin-bottom: 60px;
+  }
+
+  .home-banner .section-banner__wrap-img {
+    margin-bottom: 40px;
+  }
+
+  .home-banner .section-banner__slogan {
+    font-size: 22px;
+  }
+
+  .section-about .section__img img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .section-about .section__content {
+    padding-top: 30px;
+  }
+
+  .section-about .btn_md {
+    min-width: 200px;
+    width: auto;
+    margin: 30px auto 0;
+  }
+
+  .section-news {
+    background-image: url(../assets/img/bg-news-mob.jpg);
+  }
+
+  .section-news {
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+
+  .slider-news {
+    padding-bottom: 35px;
   }
 
   .social-assistance .section-banner .container {
