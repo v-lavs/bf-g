@@ -142,7 +142,6 @@
 @include respond-to($xl) {
   .header {
     padding: 23px 0;
-    background-color: mediumslateblue;
     &__logo {
       max-width: 260px;
     }
@@ -151,7 +150,6 @@
 
 @include respond-to($lg) {
   .header {
-    background: navajowhite;
     &__logo {
       max-width: 210px;
     }
@@ -168,10 +166,6 @@
 }
 
 @include respond-to($md) {
-
-  .header{
-    background-color: lightgreen;
-  }
 
   .header__nav {
     position: fixed;
@@ -210,17 +204,12 @@
   }
 
 }
-@include respond-to($sm) {
-  .header{
-    background-color: burlywood;
-  }
-}
+
 @include respond-to($xs) {
   .header {
     padding-top: 15px;
     padding-bottom: 30px;
 
-    background-color: fuchsia;
     .container {
       flex-wrap: wrap;
     }

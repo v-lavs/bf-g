@@ -62,7 +62,6 @@
 
 @include respond-to($md) {
   .section-banner {
-    //margin-bottom: 80px;
 
     &__text {
       font-size: 22px;
@@ -100,12 +99,15 @@
   }
 
   @include respond-to($lg) {
+  .container{
+      min-height: 675px;
+    }
     .section-banner__wrap-img img {
       right: 130px;
     }
   }
   @include respond-to($md) {
-    padding-top: 60px;
+
     .container {
       min-height: 0;
     }
