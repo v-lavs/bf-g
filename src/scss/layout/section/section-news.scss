@@ -13,3 +13,15 @@
 .slider-news{
   padding-bottom: 64px;
 }
+
+@include respond-to($sm){
+  .slider-news{
+    .swiper-pagination{
+      display: block!important;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+      display: none;
+    }
+  }
+}

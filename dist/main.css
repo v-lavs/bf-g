@@ -1664,15 +1664,23 @@ body.modal_open {
   margin-bottom: 60px;
 }
 
-.swiper-pagination {
-  display: none;
-  width: 100%;
-}
-
 .swiper {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.swiper-pagination {
+  display: none !important;
+  width: 100%;
+}
+
+.swiper-pagination.blue-bg .swiper-pagination-bullet {
+  border-color: #FFFFFF;
+}
+
+.swiper-pagination.blue-bg .swiper-pagination-bullet-active {
+  background-color: #ffffff;
 }
 
 .swiper-pagination-bullet {
@@ -2268,6 +2276,10 @@ body.modal_open {
   padding-bottom: 64px;
 }
 
+.about-helps .swiper-slide {
+  height: auto;
+}
+
 .about-helps .post {
   max-width: 465px;
   background-repeat: no-repeat;
@@ -2276,6 +2288,7 @@ body.modal_open {
   border-radius: 0 0 15px 15px;
   color: #FFFFFF;
   text-align: center;
+  height: 100%;
 }
 
 .about-helps .post__thumb {
@@ -3227,6 +3240,16 @@ body.modal_open {
     font-size: 28px;
   }
 
+  .swiper-pagination {
+    display: block !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 21px;
+    height: 14px;
+  }
+
   .content__box {
     max-width: 530px;
   }
@@ -3245,6 +3268,10 @@ body.modal_open {
 
   .section-valuables .valuables {
     padding-bottom: 38px;
+  }
+
+  .section-valuables .swiper-pagination {
+    display: block !important;
   }
 
   .section-valuables .valuables__text {
@@ -3289,12 +3316,25 @@ body.modal_open {
     position: relative;
   }
 
+  .slider-news .swiper-pagination {
+    display: block !important;
+  }
+
+  .slider-news .swiper-button-next,
+  .slider-news .swiper-button-prev {
+    display: none;
+  }
+
   .advantages .swiper-slide {
     width: 100%;
   }
 
   .advantages .swiper-wrapper {
     justify-content: flex-start;
+  }
+
+  .advantages .swiper-pagination {
+    display: block !important;
   }
 
   .social-assistance .section-banner .container {
@@ -3442,12 +3482,6 @@ body.modal_open {
   .post_lg .post__title {
     font-size: 22px;
     margin-bottom: 25px;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 21px;
-    height: 14px;
   }
 
   .input {
