@@ -9,7 +9,6 @@
 // CUSTOM SCRIPTS
 
 
-
 $(document).ready(function () {
     function destroySwiper(sliderInstance) {
         if (sliderInstance instanceof Swiper && sliderInstance.initialized) {
@@ -194,18 +193,14 @@ $(document).ready(function () {
         animation: 'fadeIn',
         overlayBackgroundColor: 'rgba (1,1,1, .25)'
     });
-// VIDEO YOUTUBE
-    // selector of all videos on the page
-    const videos = document.querySelectorAll('.video');
 
-// generate video url
+// VIDEO YOUTUBE
+    const videos = document.querySelectorAll('.video');
     let generateUrl = function(id) {
         let query = '?rel=0&showinfo=0&autoplay=1';
 
         return 'https://www.youtube.com/embed/' + id + query;
     };
-
-// creating iframe
     let createIframe = function(id) {
         let iframe = document.createElement('iframe');
 
@@ -216,7 +211,6 @@ $(document).ready(function () {
         return iframe;
     };
 
-// main code
     videos.forEach((el) => {
         let videoHref = el.getAttribute('data-video');
 
