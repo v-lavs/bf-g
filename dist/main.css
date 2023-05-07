@@ -1921,32 +1921,35 @@ body.modal_open {
   margin-bottom: 60px;
 }
 
-.footer .part_right {
-  width: 67%;
+.footer .part_left {
+  width: 58%;
   padding: 60px 0;
 }
 
-.footer .part_left {
-  width: 40%;
-  min-height: 465px;
-  shape-outside: polygon(26% 1%, 100% 0%, 100% 99%, 0% 100%);
-  clip-path: polygon(26% 1%, 100% 0%, 100% 99%, 0% 100%);
-  shape-margin: 10px;
-  float: right;
+.footer .part_right {
+  position: relative;
+  width: 42%;
+  padding-top: 30%;
 }
 
 .footer-top {
   background-color: #00ADF1;
-  background-position: right bottom -72px;
-  background-repeat: no-repeat;
-  background-size: 33%;
 }
 
-.footer-top .container {
-  padding-right: 0;
+.footer-top .wrap-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 45vw;
+  background-image: url(../assets/img/donate-bg3.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50%;
 }
 
 .footer-bottom {
+  position: relative;
   background-color: #02628C;
   font-weight: 400;
   font-size: 24px;
@@ -1955,7 +1958,6 @@ body.modal_open {
 
 .footer-bottom .container {
   display: flex;
-  justify-content: flex-end;
 }
 
 .footer__logo {
@@ -2003,6 +2005,11 @@ body.modal_open {
   padding: 8px 0;
 }
 
+.footer .wrap-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .footer .contacts__item {
   position: relative;
   display: inline-block;
@@ -2012,6 +2019,10 @@ body.modal_open {
 
 .footer .contacts__item:last-child {
   margin-bottom: 0;
+}
+
+.footer .contacts a {
+  display: block;
 }
 
 .footer .contacts__icon {
@@ -2856,8 +2867,8 @@ body.modal_open {
     max-width: 1440px;
   }
 
-  .footer-top {
-    background-size: 41%;
+  .footer-top .wrap-img {
+    background-size: cover;
   }
 
   .donate-page .section-banner:before {
@@ -2888,6 +2899,10 @@ body.modal_open {
   }
 
   .header__logo {
+    max-width: 260px;
+  }
+
+  .footer__logo {
     max-width: 260px;
   }
 }
@@ -2948,6 +2963,33 @@ body.modal_open {
 
   .header__lang {
     font-size: 16px;
+  }
+
+  .btn_lg {
+    font-size: 30px;
+  }
+
+  .footer__logo {
+    max-width: 210px;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom .container {
+    flex-wrap: wrap;
+  }
+
+  .wrap-contacts {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer__part {
+    max-width: 33.33%;
+    flex-grow: 1;
+  }
+
+  .footer__nav {
+    min-width: 0;
   }
 
   .home-banner .section-banner__wrap-img img {
@@ -3128,6 +3170,33 @@ body.modal_open {
     margin-right: 0;
   }
 
+  .footer .part_left {
+    width: 50%;
+  }
+
+  .footer .btn_lg {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 17px 40px;
+  }
+
+  .footer .part_right {
+    width: 50%;
+  }
+
+  .footer .wrap-img {
+    width: 50vw;
+    background-size: contain;
+  }
+
+  .footer .menu__item {
+    font-size: 19px;
+  }
+
+  .footer-bottom {
+    font-size: 19px;
+  }
+
   .section-banner__text {
     font-size: 22px;
   }
@@ -3296,6 +3365,54 @@ body.modal_open {
     background-color: burlywood;
   }
 
+  .footer__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__part {
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .footer__part:last-child {
+    padding-bottom: 0;
+  }
+
+  .footer .text {
+    margin-bottom: 30px;
+  }
+
+  .footer .part_left {
+    padding: 38px 0;
+  }
+
+  .footer .btn_lg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer .menu__item {
+    text-align: center;
+  }
+
+  .wrap-contacts {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    padding: 30px 0;
+  }
+
   .home-banner .section-banner__wrap-img {
     justify-content: center;
   }
@@ -3458,6 +3575,26 @@ body.modal_open {
     width: 100%;
     padding-left: 0;
     margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .footer .d-flex {
+    flex-direction: column;
+  }
+
+  .footer .part_left {
+    width: 100%;
+  }
+
+  .footer .part_right {
+    width: 100%;
+    padding-top: 97.25%;
+  }
+
+  .footer .wrap-img {
+    width: 100vw;
+    background-size: contain;
   }
 }
 
