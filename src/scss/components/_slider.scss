@@ -5,12 +5,14 @@
 }
 
 .swiper-pagination {
-  display: none!important;
+  display: none !important;
   width: 100%;
-  &.blue-bg{
+
+  &.blue-bg {
     .swiper-pagination-bullet {
       border-color: #FFFFFF
     }
+
     .swiper-pagination-bullet-active {
       background-color: #ffffff;
     }
@@ -71,9 +73,9 @@
 }
 
 @include respond-to($sm) {
-.swiper-pagination{
-  display: block!important;
-}
+  .swiper-pagination {
+    display: block !important;
+  }
   .swiper-button-prev,
   .swiper-button-next {
     width: 21px;

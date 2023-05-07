@@ -38,11 +38,13 @@
       flex-direction: column;
       min-height: 276px;
       padding: 0 30px 30px;
+      height: 100%;
     }
 
     &__text {
       font-weight: 400;
       font-size: 22px;
+      margin-bottom: 30px;
     }
 
     &__link {
@@ -57,6 +59,26 @@
       &:focus {
         text-decoration: underline;
       }
+    }
+  }
+}
+@include respond-to($lg){
+  .about-helps{
+    .post{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .post__content{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+@include respond-to($sm){
+  .about-helps{
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
     }
   }
 }

@@ -2309,11 +2309,13 @@ body.modal_open {
   flex-direction: column;
   min-height: 276px;
   padding: 0 30px 30px;
+  height: 100%;
 }
 
 .about-helps .post__text {
   font-weight: 400;
   font-size: 22px;
+  margin-bottom: 30px;
 }
 
 .about-helps .post__link {
@@ -2938,6 +2940,16 @@ body.modal_open {
     font-size: 16px;
   }
 
+  .about-helps .post {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-helps .post__content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .social-assistance .description {
     font-size: 30px;
   }
@@ -3325,16 +3337,34 @@ body.modal_open {
     display: none;
   }
 
+  .advantages {
+    padding-bottom: 30px;
+  }
+
   .advantages .swiper-slide {
     width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    padding: 0 10px;
   }
 
   .advantages .swiper-wrapper {
     justify-content: flex-start;
   }
 
-  .advantages .swiper-pagination {
-    display: block !important;
+  .advantages .swiper-button-prev,
+  .advantages .swiper-button-next {
+    display: none;
+  }
+
+  .about-helps .swiper-button-prev,
+  .about-helps .swiper-button-next {
+    display: none;
+  }
+
+  .slider-partners .swiper-button-prev,
+  .slider-partners .swiper-button-next {
+    display: none;
   }
 
   .social-assistance .section-banner .container {
@@ -3455,6 +3485,10 @@ body.modal_open {
 
   .post__list {
     display: block;
+  }
+
+  .post .btn {
+    margin: auto;
   }
 
   .post__item {

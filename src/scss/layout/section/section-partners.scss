@@ -19,3 +19,12 @@
     }
   }
 }
+
+@include respond-to($sm){
+  .slider-partners{
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}

@@ -1,7 +1,8 @@
-.section-advantages{
+.section-advantages {
   position: relative;
   padding-top: 140px;
-  &:before{
+
+  &:before {
     position: absolute;
     content: '';
     display: block;
@@ -17,23 +18,27 @@
   }
 
 }
-.advantages{
+
+.advantages {
   max-width: 866px;
   width: 100%;
   margin: 0 auto;
-  &__card{
+
+  &__card {
     width: 198px;
     height: 198px;
     border-radius: 50%;
     background: linear-gradient(135deg, #00B2F4 0%, #DCF6FD 85.73%);
   }
-  &__icon{
+
+  &__icon {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: auto;
     height: 50%;
   }
-  &__text{
+
+  &__text {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -42,11 +47,12 @@
     justify-content: center;
     align-items: center;
   }
-  .swiper-wrapper{
+
+  .swiper-wrapper {
     justify-content: center;
   }
 
-  .swiper-slide{
+  .swiper-slide {
     display: flex;
     justify-content: center;
     max-width: 334px;
@@ -56,19 +62,26 @@
   }
 }
 
-@include respond-to($sm){
-  .section-advantages{
+@include respond-to($sm) {
+  .section-advantages {
 
   }
-  .advantages{
-    .swiper-slide{
+  .advantages {
+    padding-bottom: 30px;
+    .swiper-slide {
       width: 100%;
+      max-width: 100%;
+      flex-shrink: 0;
+      padding: 0 10px;
     }
-    .swiper-wrapper{
+
+    .swiper-wrapper {
       justify-content: flex-start;
     }
-.swiper-pagination{
-  display: block!important;
-}
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
   }
 }

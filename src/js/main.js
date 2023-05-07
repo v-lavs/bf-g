@@ -48,7 +48,7 @@ $(document).ready(function () {
                 spaceBetween: 24,
             },
 
-            640: {
+            768: {
                 slidesPerView: 2,
                 spaceBetween: 24,
             }
@@ -89,7 +89,11 @@ $(document).ready(function () {
                 slidesPerView: 1,
                 spaceBetween: 24,
             },
-            640: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            992: {
                 slidesPerView: 3,
                 spaceBetween: 24,
             }
@@ -196,12 +200,12 @@ $(document).ready(function () {
 
 // VIDEO YOUTUBE
     const videos = document.querySelectorAll('.video');
-    let generateUrl = function(id) {
+    let generateUrl = function (id) {
         let query = '?rel=0&showinfo=0&autoplay=1';
 
         return 'https://www.youtube.com/embed/' + id + query;
     };
-    let createIframe = function(id) {
+    let createIframe = function (id) {
         let iframe = document.createElement('iframe');
 
         iframe.setAttribute('allowfullscreen', '');
