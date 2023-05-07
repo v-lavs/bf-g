@@ -143,6 +143,38 @@ body {
       z-index: -1;
     }
   }
+
+  img.alignright {
+    float: right;
+    margin: 0 0 1.2em 1.2em
+  }
+
+  img.alignleft {
+    float: left;
+    margin: 0 1.2em 1.2em 0
+  }
+
+  img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  a img.alignright {
+    float: right;
+    margin: 0 0 1.2em 1.2em
+  }
+
+  a img.alignleft {
+    float: left;
+    margin: 0 1.2em 1.2em 0
+  }
+
+  a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
 }
 
 .page {
@@ -248,15 +280,17 @@ body {
   .page__title {
     font-size: 45px;
   }
-  .page{
+  .page {
     padding-bottom: 80px;
   }
 }
+
 @include respond-to($sm) {
-  .section{
+  .section {
     padding-bottom: 80px;
   }
 }
+
 @include respond-to($xs) {
   .page {
     padding-bottom: 60px;
@@ -280,15 +314,16 @@ body {
     background-position: 11% top;
     background-size: auto;
   }
-  .section{
+  .section {
     padding-bottom: 60px;
-    &__title{
+
+    &__title {
       font-size: 32px;
       margin-bottom: 30px;
     }
   }
-  .dynamic-content{
-    blockquote{
+  .dynamic-content {
+    blockquote {
       padding: 15px 0;
       margin-bottom: 30px;
     }

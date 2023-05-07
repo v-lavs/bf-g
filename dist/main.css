@@ -1260,6 +1260,38 @@ body.modal_open {
   z-index: -1;
 }
 
+.dynamic-content img.alignright {
+  float: right;
+  margin: 0 0 1.2em 1.2em;
+}
+
+.dynamic-content img.alignleft {
+  float: left;
+  margin: 0 1.2em 1.2em 0;
+}
+
+.dynamic-content img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dynamic-content a img.alignright {
+  float: right;
+  margin: 0 0 1.2em 1.2em;
+}
+
+.dynamic-content a img.alignleft {
+  float: left;
+  margin: 0 1.2em 1.2em 0;
+}
+
+.dynamic-content a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .page {
   padding-top: 120px;
   padding-bottom: 120px;
