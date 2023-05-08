@@ -2136,6 +2136,7 @@ body.modal_open {
 }
 
 .section-banner__slogan {
+  width: 45%;
   font-weight: 700;
   font-size: 55px;
   color: #02628C;
@@ -2160,10 +2161,6 @@ body.modal_open {
   object-fit: cover;
 }
 
-.section-banner .img-home-banner {
-  max-width: 1018px;
-}
-
 .home-banner {
   position: relative;
 }
@@ -2176,9 +2173,12 @@ body.modal_open {
   display: flex;
   padding-left: 420px;
   justify-content: flex-end;
+  width: 50vw;
+  left: 50%;
 }
 
 .home-banner .section-banner__wrap-img img {
+  max-width: 1018px;
   position: static;
   margin-left: auto;
 }
@@ -2983,6 +2983,7 @@ body.modal_open {
 
   .home-banner .section-banner__wrap-img {
     bottom: -30px;
+    width: 50%;
   }
 
   .section-about .section__img {
@@ -3060,22 +3061,16 @@ body.modal_open {
     max-width: 260px;
   }
 
+  .home-banner .section-banner__wrap-img img {
+    max-width: 804px;
+  }
+
   .home-banner .container {
     min-height: 586px;
   }
 
   .home-banner .img-home-banner {
     max-width: 770px;
-  }
-}
-
-@media only screen and (max-width: 1280px) and (max-height: 610px) {
-  .home-banner .container {
-    min-height: 610px;
-  }
-
-  .home-banner .img-home-banner {
-    max-width: 865px;
   }
 }
 
@@ -3172,7 +3167,7 @@ body.modal_open {
     min-height: 575px;
   }
 
-  .home-banner .img-home-banner {
+  .home-banner .section-banner__wrap-img img {
     max-width: 605px;
     right: 130px;
   }
@@ -3394,7 +3389,7 @@ body.modal_open {
   }
 
   .home-banner .section-banner__wrap-img {
-    position: relative;
+    position: static;
     padding: 0;
     width: 60%;
     margin: 0 auto 60px;
@@ -4176,6 +4171,14 @@ body.modal_open {
 }
 
 @media only screen and (orientation: landscape) and (max-height: 610px) {
+  .home-banner .container {
+    min-height: 580px;
+  }
+
+  .home-banner .section-banner__wrap-img img {
+    max-width: 865px;
+  }
+
   .social-assistance .section-banner .container {
     min-height: 377px;
   }
