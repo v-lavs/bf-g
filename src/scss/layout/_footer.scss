@@ -5,6 +5,7 @@
 
   .text {
     margin-bottom: 60px;
+    font-weight: 700;
   }
 
   .part_left {
@@ -89,6 +90,14 @@
 
   .menu__link {
     padding: 8px 0;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      -webkit-text-stroke:initial;
+      text-stroke:initial;
+      text-decoration: underline;
+    }
   }
 
   .wrap-contacts {
@@ -110,6 +119,11 @@
 
     a {
       display: block;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
 
     &__icon {

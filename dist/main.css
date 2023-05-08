@@ -1196,6 +1196,10 @@ body.modal_open {
   margin-bottom: 1.5em;
 }
 
+.dynamic-content a {
+  color: #7fc2da;
+}
+
 .dynamic-content a:hover,
 .dynamic-content a:focus {
   text-decoration: underline;
@@ -1952,6 +1956,7 @@ body.modal_open {
 
 .footer .text {
   margin-bottom: 60px;
+  font-weight: 700;
 }
 
 .footer .part_left {
@@ -2036,6 +2041,14 @@ body.modal_open {
 
 .footer .menu__link {
   padding: 8px 0;
+  transition: .5s;
+}
+
+.footer .menu__link:hover,
+.footer .menu__link:focus {
+  -webkit-text-stroke: initial;
+  text-stroke: initial;
+  text-decoration: underline;
 }
 
 .footer .wrap-contacts {
@@ -2056,6 +2069,11 @@ body.modal_open {
 
 .footer .contacts a {
   display: block;
+}
+
+.footer .contacts a:hover,
+.footer .contacts a:focus {
+  text-decoration: underline;
 }
 
 .footer .contacts__icon {
@@ -2176,6 +2194,7 @@ body.modal_open {
   font-size: 32px;
   text-align: center;
   color: #00ADF1;
+  font-weight: 700;
 }
 
 .section-valuables .valuables__icon {
@@ -2225,6 +2244,7 @@ body.modal_open {
 
 .section-about .section__content {
   padding-top: 100px;
+  font-weight: 700;
 }
 
 .charity .section__img img {
@@ -2251,7 +2271,11 @@ body.modal_open {
 
 .section-advantages {
   position: relative;
-  padding-top: 140px;
+  padding-top: 120px;
+}
+
+.section-advantages .section__title {
+  margin-bottom: 90px;
 }
 
 .section-advantages:before {
@@ -2921,7 +2945,7 @@ body.modal_open {
 
 @media only screen and (max-width: 1440px) {
   .section-about .btn {
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
   .section-about .section__img {
@@ -3051,6 +3075,10 @@ body.modal_open {
   .home-banner .img-home-banner {
     max-width: 796px;
     right: 130px;
+  }
+
+  .section-advantages .section__title {
+    margin-bottom: 60px;
   }
 
   .about-helps .post {
@@ -3524,6 +3552,10 @@ body.modal_open {
     left: 0;
     width: 60vw;
     position: relative;
+  }
+
+  .section-news {
+    padding-top: 30px;
   }
 
   .slider-news .swiper-pagination {

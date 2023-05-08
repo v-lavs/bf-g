@@ -1,6 +1,10 @@
 .section-advantages {
   position: relative;
-  padding-top: 140px;
+  padding-top: 120px;
+
+  .section__title {
+    margin-bottom: 90px;
+  }
 
   &:before {
     position: absolute;
@@ -62,12 +66,21 @@
   }
 }
 
+@include respond-to($lg) {
+  .section-advantages {
+    .section__title {
+      margin-bottom: 60px;
+    }
+  }
+}
+
 @include respond-to($sm) {
   .section-advantages {
 
   }
   .advantages {
     padding-bottom: 30px;
+
     .swiper-slide {
       width: 100%;
       max-width: 100%;

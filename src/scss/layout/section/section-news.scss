@@ -15,6 +15,12 @@
 }
 
 @include respond-to($sm){
+  .section-news{
+    padding-top: 30px;
+  }
+}
+
+@include respond-to($sm){
 
   .slider-news{
     .swiper-pagination{
