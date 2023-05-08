@@ -2145,10 +2145,11 @@ body.modal_open {
 .home-banner .section-banner__wrap-img {
   display: flex;
   padding-left: 420px;
+  justify-content: flex-end;
 }
 
 .home-banner .section-banner__wrap-img img {
-  position: relative;
+  position: static;
   margin-left: auto;
 }
 
@@ -2936,6 +2937,20 @@ body.modal_open {
   .footer__logo {
     max-width: 260px;
   }
+
+  .home-banner .section-banner__wrap-img {
+    justify-content: normal;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 610px) {
+  .home-banner .container {
+    min-height: 610px;
+  }
+
+  .home-banner .img-home-banner {
+    max-width: 865px;
+  }
 }
 
 @media only screen and (max-width: 1220px) {
@@ -3020,10 +3035,11 @@ body.modal_open {
   }
 
   .home-banner .container {
-    min-height: 675px;
+    min-height: 575px;
   }
 
-  .home-banner .section-banner__wrap-img img {
+  .home-banner .img-home-banner {
+    max-width: 796px;
     right: 130px;
   }
 
