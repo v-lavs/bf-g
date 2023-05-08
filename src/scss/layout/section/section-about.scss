@@ -13,6 +13,10 @@
     width: 50%;
   }
 
+  .d-flex {
+    align-items: center;
+  }
+
   .section__img {
     position: relative;
 
@@ -29,7 +33,7 @@
   }
 
   .section__content {
-    padding-top: 100px;
+    //padding-top: 100px;
     font-weight: 700;
   }
 }
@@ -40,29 +44,33 @@
     left: auto;
   }
 }
-@media only screen and (min-width: 1441px){
+
+@media only screen and (min-width: 1441px) {
   .section-about {
-    .section__img{
+    .section__img {
       display: flex;
       justify-content: flex-end;
       left: 36px;
-      //min-height: 0;
-      img{
+
+      img {
         position: relative;
+        width: 100%;
       }
     }
   }
   .charity {
     .section__img img {
       right: 24px;
-      left: auto;
+      left: 0;
     }
+
     .section__img {
       justify-content: normal;
       left: -36px;
     }
   }
 }
+
 @media only screen and (max-width: 1440px) {
   .section-about {
     .btn {
@@ -70,7 +78,6 @@
     }
 
     .section__img {
-      //min-height: 0;
       padding-top: 62%;
     }
   }
@@ -79,7 +86,7 @@
 @include respond-to($md) {
   .section-about {
     .section__content {
-      padding-top: 50px;
+      //padding-top: 50px;
     }
 
     .btn {
@@ -96,6 +103,7 @@
       max-width: 480px;
       width: 100%;
       margin: 0 auto 0;
+      padding-top: 50px;
     }
 
     .d-flex {
@@ -130,9 +138,11 @@
       width: 100%;
       max-width: 360px;
     }
+
     .section__content {
       padding-top: 30px;
     }
+
     .btn_md {
       min-width: 200px;
       width: auto;
