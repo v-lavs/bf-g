@@ -64,10 +64,11 @@
   .post__title {
     font-size: 32px;
     margin-bottom: 25px;
-    //display: -webkit-box;
-    //-webkit-line-clamp: 3;
-    //-webkit-box-orient: vertical;
-    //overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 }
 
@@ -83,6 +84,15 @@
   .post__title {
     font-size: 40px;
     margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1568px){
+  .post,
+  .post_md,
+  .post_lg,
+  .post_sm{
+    max-width: 100%;
   }
 }
 
@@ -123,6 +133,7 @@
   .post_lg .post__title {
     font-size: 28px;
   }
+
 }
 
 @include respond-to($xs) {

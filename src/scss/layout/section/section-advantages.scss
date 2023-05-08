@@ -66,6 +66,12 @@
   }
 }
 
+@media only screen and (min-width: 1441px) {
+    .advantages {
+      max-width: 1062px;
+    }
+}
+
 @include respond-to($lg) {
   .section-advantages {
     .section__title {
@@ -75,9 +81,7 @@
 }
 
 @include respond-to($sm) {
-  .section-advantages {
 
-  }
   .advantages {
     padding-bottom: 30px;
 

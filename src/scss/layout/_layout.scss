@@ -1,9 +1,13 @@
 
 .container {
   max-width: 1760px;
+  //max-width: 1586px;
   padding: 0 60px;
   width: 100%;
   margin: 0 auto;
+
+  background-color: lightgreen;
+  opacity: .5;
 
 
   @include respond-to($xxl) {
@@ -16,13 +20,7 @@
   }
 
   @include respond-to($lg) {
-    //max-width: 992px;
-    //padding: 0 20px;
-  }
-
-  @include respond-to($md) {
-    //max-width: 767px;
-    //padding: 0 40px;
+    max-width: 100%;
   }
 
   @include respond-to($xs) {
@@ -35,6 +33,9 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media only screen and (min-width: 1568px){
+    max-width: 1260px;
+  }
   @include respond-to($lg) {
     max-width: 930px;
   }

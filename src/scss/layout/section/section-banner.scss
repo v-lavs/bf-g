@@ -48,18 +48,19 @@
   }
 
   .img-home-banner {
-    max-width: 1033px;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-image: url(../assets/img/banner-mask-2.png);
-    mask-image: url(../assets/img/banner-mask-2.png);
-    filter: sepia(300%) hue-rotate(150deg) saturate(450%);
+    max-width: 1018px;
   }
 }
-@media only screen and (orientation: landscape) and (max-height: 610px){
+
+@media only screen and (min-width: 1441px) {
+  .home-banner {
+    .container {
+      min-height: 720px;
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 610px) {
   .social-assistance .section-banner .container {
     min-height: 377px;
   }
@@ -68,7 +69,9 @@
     padding-top: 45%;
   }
 }
+
 @include respond-to($md) {
+
   .section-banner {
 
     &__text {
@@ -108,16 +111,19 @@
   }
 
   @include respond-to($xl) {
-    .section-banner__wrap-img {
-      justify-content: normal;
+    .container {
+      min-height: 586px;
+    }
+    .img-home-banner {
+      max-width: 770px;
     }
   }
-@media only screen and (max-width: 1280px) and (max-height: 610px){
+  @media only screen and (max-width: 1280px) and (max-height: 610px) {
 
-   .container {
+    .container {
       min-height: 610px;
     }
-    .img-home-banner{
+    .img-home-banner {
       max-width: 865px;
     }
   }
@@ -127,14 +133,19 @@
       min-height: 575px;
     }
     .img-home-banner {
-      max-width: 796px;
+      max-width: 605px;
       right: 130px;
+    }
+    .container {
+      min-height: 462px;
     }
   }
   @include respond-to($md) {
 
     .container {
       min-height: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .section-banner__slogan {
@@ -148,6 +159,7 @@
       padding: 0;
       width: 60%;
       margin: 0 auto 60px;
+      order: -1;
 
       img {
         right: 0;
@@ -163,10 +175,6 @@
   @include respond-to($sm) {
     .section-banner__wrap-img {
       justify-content: center;
-    }
-    .img-home-banner {
-      -webkit-mask-image: url(../assets/img/mask-baner-mob1.png);
-      mask-image: url(../assets/img/mask-baner-mob1.png);
     }
   }
   @include respond-to($xs) {

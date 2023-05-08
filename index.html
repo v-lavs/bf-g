@@ -84,12 +84,6 @@
 
     <main class="main home">
         <section class="section-banner home-banner">
-            <div class="section-banner__wrap-img">
-                <picture>
-                    <source srcset="assets/img/img-banner-mob1.jpg" media="(max-width: 480px)">
-                    <img src="assets/img/img-b1.jpg" alt="" class="img-home-banner">
-                </picture>
-            </div>
             <div class="container">
                 <div class="part_left">
                     <div class="section-banner__slogan">
@@ -97,6 +91,15 @@
                         справи змінюють людей
                     </div>
                     <div class="section-banner__text"></div>
+                </div>
+                <div class="section-banner__wrap-img">
+                    <picture>
+                        <source srcset="assets/img/banner-img-desk-2.png" media="(min-width:1441px)">
+                        <source srcset="assets/img/banner-img-desk-2.png" media="(max-width:991px)">
+                        <source srcset="assets/img/img-banner-mob.png" media="(max-width: 480px)">
+
+                        <img src="assets/img/banner-img-desk.png" alt="" class="img-home-banner">
+                    </picture>
                 </div>
             </div>
         </section>

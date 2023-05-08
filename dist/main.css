@@ -1686,6 +1686,11 @@ body.modal_open {
 .post_md .post__title {
   font-size: 32px;
   margin-bottom: 25px;
+  text-overflow: -o-ellipsis-lastline;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .post_lg {
@@ -1800,6 +1805,8 @@ body.modal_open {
   padding: 0 60px;
   width: 100%;
   margin: 0 auto;
+  background-color: lightgreen;
+  opacity: .5;
 }
 
 .content__box {
@@ -2144,15 +2151,7 @@ body.modal_open {
 }
 
 .section-banner .img-home-banner {
-  max-width: 1033px;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-image: url(../assets/img/banner-mask-2.png);
-  mask-image: url(../assets/img/banner-mask-2.png);
-  filter: sepia(300%) hue-rotate(150deg) saturate(450%);
+  max-width: 1018px;
 }
 
 .home-banner {
@@ -2231,8 +2230,6 @@ body.modal_open {
 
 .section-about .section__img {
   position: relative;
-  min-height: 820px;
-  height: auto;
 }
 
 .section-about .section__img img {
@@ -2240,6 +2237,7 @@ body.modal_open {
   position: absolute;
   top: 0;
   left: 24px;
+  bottom: 0;
   max-width: 708px;
   width: 50vw;
 }
@@ -2448,6 +2446,8 @@ body.modal_open {
   justify-content: center;
   position: relative;
   min-height: 516px;
+  max-width: 1760px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2829,14 +2829,6 @@ body.modal_open {
   max-width: none;
 }
 
-.related-post__item .post__title {
-  text-overflow: -o-ellipsis-lastline;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}
-
 .donate-page .section-banner__slogan {
   margin-top: auto;
   margin-bottom: auto;
@@ -2947,6 +2939,49 @@ body.modal_open {
   margin-top: 10px;
 }
 
+@media only screen and (min-width: 1441px) {
+  .home-banner .container {
+    min-height: 720px;
+  }
+
+  .advantages {
+    max-width: 1062px;
+  }
+}
+
+@media only screen and (min-width: 1568px) {
+  .post,
+  .post_md,
+  .post_lg,
+  .post_sm {
+    max-width: 100%;
+  }
+
+  .content__box {
+    max-width: 1260px;
+  }
+
+  .section-about .section__img {
+    display: flex;
+    justify-content: flex-end;
+    left: 36px;
+  }
+
+  .section-about .section__img img {
+    position: relative;
+  }
+
+  .charity .section__img img {
+    right: 24px;
+    left: auto;
+  }
+
+  .charity .section__img {
+    justify-content: normal;
+    left: -36px;
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .container {
     max-width: 1440px;
@@ -2967,7 +3002,6 @@ body.modal_open {
   }
 
   .section-about .section__img {
-    min-height: 0;
     padding-top: 62%;
   }
 }
@@ -2990,8 +3024,12 @@ body.modal_open {
     max-width: 260px;
   }
 
-  .home-banner .section-banner__wrap-img {
-    justify-content: normal;
+  .home-banner .container {
+    min-height: 586px;
+  }
+
+  .home-banner .img-home-banner {
+    max-width: 770px;
   }
 }
 
@@ -3037,6 +3075,10 @@ body.modal_open {
 
   .post_md .post__title {
     font-size: 26px;
+  }
+
+  .container {
+    max-width: 100%;
   }
 
   .content__box {
@@ -3091,8 +3133,12 @@ body.modal_open {
   }
 
   .home-banner .img-home-banner {
-    max-width: 796px;
+    max-width: 605px;
     right: 130px;
+  }
+
+  .home-banner .container {
+    min-height: 462px;
   }
 
   .section-advantages .section__title {
@@ -3302,6 +3348,8 @@ body.modal_open {
 
   .home-banner .container {
     min-height: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .home-banner .section-banner__slogan {
@@ -3315,6 +3363,7 @@ body.modal_open {
     padding: 0;
     width: 60%;
     margin: 0 auto 60px;
+    order: -1;
   }
 
   .home-banner .section-banner__wrap-img img {
@@ -3525,11 +3574,6 @@ body.modal_open {
 
   .home-banner .section-banner__wrap-img {
     justify-content: center;
-  }
-
-  .home-banner .img-home-banner {
-    -webkit-mask-image: url(../assets/img/mask-baner-mob1.png);
-    mask-image: url(../assets/img/mask-baner-mob1.png);
   }
 
   .section-valuables {
