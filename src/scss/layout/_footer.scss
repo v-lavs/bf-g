@@ -209,7 +209,7 @@
 @include respond-to($md) {
   .footer {
     &__wrap-img img {
-      bottom: -40px
+      bottom: -43px
     }
 
     .text {
@@ -312,5 +312,10 @@
     &__wrap-img {
       width: 100vw;
     }
+  }
+}
+@media only screen and (max-width: 350px){
+  .footer .btn_lg {
+    width: 100%;
   }
 }
