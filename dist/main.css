@@ -1321,7 +1321,7 @@ body.modal_open {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  width: 50%;
+  width: 50vw;
   left: 50%;
   height: 100%;
   max-width: 960px;
@@ -2950,6 +2950,10 @@ body.modal_open {
 }
 
 @media only screen and (min-width: 1441px) {
+  .page .section-banner .wrap-img {
+    width: 50%;
+  }
+
   .post,
   .post_md,
   .post_lg,
