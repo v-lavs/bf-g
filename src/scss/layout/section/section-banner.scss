@@ -59,7 +59,15 @@
     filter: sepia(300%) hue-rotate(150deg) saturate(450%);
   }
 }
-
+@media only screen and (orientation: landscape) and (max-height: 610px){
+  .social-assistance .section-banner .container {
+    min-height: 377px;
+  }
+  .video {
+    width: 80%;
+    padding-top: 45%;
+  }
+}
 @include respond-to($md) {
   .section-banner {
 
