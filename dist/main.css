@@ -1967,6 +1967,7 @@ body.modal_open {
   margin-top: auto;
   color: #FFFFFF;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .footer .text {
@@ -1985,20 +1986,26 @@ body.modal_open {
   padding-top: 30%;
 }
 
-.footer-top {
-  background-color: #00ADF1;
-}
-
-.footer-top .wrap-img {
+.footer__wrap-img {
   position: absolute;
+  width: 42vw;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 45vw;
-  background-image: url(../assets/img/donate-bg3.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 50%;
+  right: auto;
+}
+
+.footer__wrap-img img {
+  position: absolute;
+  height: auto;
+  width: 557px;
+  object-fit: cover;
+  bottom: -60px;
+  right: -60px;
+}
+
+.footer-top {
+  background-color: #00ADF1;
 }
 
 .footer-bottom {
@@ -2961,6 +2968,18 @@ body.modal_open {
     max-width: 1260px;
   }
 
+  .footer .part_right {
+    padding: 0;
+  }
+
+  .footer__wrap-img {
+    width: 100%;
+  }
+
+  .footer__wrap-img img {
+    width: 607px;
+  }
+
   .home-banner .container {
     min-height: 720px;
   }
@@ -3001,10 +3020,6 @@ body.modal_open {
 @media only screen and (max-width: 1600px) {
   .container {
     max-width: 1440px;
-  }
-
-  .footer-top .wrap-img {
-    background-size: cover;
   }
 
   .donate-page .section-banner:before {
@@ -3119,6 +3134,10 @@ body.modal_open {
 
   .btn_lg {
     font-size: 30px;
+  }
+
+  .footer__wrap-img img {
+    right: -30px;
   }
 
   .footer__logo {
@@ -3331,23 +3350,18 @@ body.modal_open {
     margin-right: 0;
   }
 
-  .footer .part_left {
-    width: 50%;
+  .footer__wrap-img img {
+    bottom: -40px;
+  }
+
+  .footer .text {
+    margin-bottom: 40px;
   }
 
   .footer .btn_lg {
     font-size: 20px;
     border-radius: 5px;
     padding: 17px 40px;
-  }
-
-  .footer .part_right {
-    width: 50%;
-  }
-
-  .footer .wrap-img {
-    width: 50vw;
-    background-size: contain;
   }
 
   .footer .menu__item {
@@ -3753,6 +3767,16 @@ body.modal_open {
 }
 
 @media only screen and (max-width: 620px) {
+  .footer__wrap-img {
+    left: -15px;
+  }
+
+  .footer__wrap-img img {
+    max-width: 320px;
+    bottom: 0;
+    right: 0;
+  }
+
   .footer .d-flex {
     flex-direction: column;
   }
@@ -3763,12 +3787,11 @@ body.modal_open {
 
   .footer .part_right {
     width: 100%;
-    padding-top: 97.25%;
+    min-height: 282px;
   }
 
-  .footer .wrap-img {
+  .footer__wrap-img {
     width: 100vw;
-    background-size: contain;
   }
 }
 

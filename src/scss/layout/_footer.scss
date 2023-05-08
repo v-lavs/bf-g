@@ -2,6 +2,7 @@
   margin-top: auto;
   color: #FFFFFF;
   flex-shrink: 0;
+  overflow: hidden;
 
   .text {
     margin-bottom: 60px;
@@ -13,26 +14,35 @@
     padding: 60px 0;
   }
 
+
   .part_right {
     position: relative;
     width: 42%;
     padding-top: 30%;
   }
 
+
+  &__wrap-img {
+    position: absolute;
+    width: 42vw;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: auto;
+
+    img {
+      position: absolute;
+      height: auto;
+      width: 557px;
+      object-fit: cover;
+      bottom: -60px;
+      right: -60px;
+    }
+  }
+
+
   &-top {
     background-color: #00ADF1;
-
-    .wrap-img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 45vw;
-      background-image: url(../assets/img/donate-bg3.png);
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      background-size: 50%;
-    }
   }
 
   &-bottom {
@@ -94,8 +104,8 @@
 
     &:hover,
     &:focus {
-      -webkit-text-stroke:initial;
-      text-stroke:initial;
+      -webkit-text-stroke: initial;
+      text-stroke: initial;
       text-decoration: underline;
     }
   }
@@ -143,9 +153,20 @@
   }
 }
 
-@include respond-to($xxl) {
-  .footer-top .wrap-img {
-    background-size: cover;
+@media only screen and (min-width: 1441px) {
+
+  .footer {
+    .part_right {
+      padding: 0;
+    }
+
+    &__wrap-img {
+      width: 100%;
+
+      img {
+        width: 607px;
+      }
+    }
   }
 }
 
@@ -160,6 +181,10 @@
     font-size: 30px;
   }
   .footer {
+    &__wrap-img  img{
+      right: -30px;
+    }
+
     &__logo {
       max-width: 210px;
       margin-bottom: 20px;
@@ -183,23 +208,18 @@
 
 @include respond-to($md) {
   .footer {
-    .part_left {
-      width: 50%;
+    &__wrap-img img {
+      bottom: -40px
+    }
+
+    .text {
+      margin-bottom: 40px;
     }
 
     .btn_lg {
       font-size: 20px;
       border-radius: 5px;
       padding: 17px 40px;
-    }
-
-    .part_right {
-      width: 50%;
-    }
-
-    .wrap-img {
-      width: 50vw;
-      background-size: contain;
     }
 
     .menu__item {
@@ -264,8 +284,17 @@
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 620px){
   .footer {
+    &__wrap-img {
+      left: -15px;
+
+      img{
+        max-width: 320px;
+        bottom: 0;
+        right: 0;
+      }
+    }
     .d-flex {
       flex-direction: column;
     }
@@ -277,12 +306,11 @@
 
     .part_right {
       width: 100%;
-      padding-top: 97.25%;
+      min-height: 282px;
     }
 
-    .wrap-img {
+    &__wrap-img {
       width: 100vw;
-      background-size: contain;
     }
   }
 }
