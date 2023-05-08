@@ -2664,6 +2664,13 @@ body.modal_open {
   overflow: hidden;
 }
 
+.single-article .breadcrumb__item.active {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .single-article .section__title {
   margin-bottom: 40px;
   text-align: left;
