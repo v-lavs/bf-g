@@ -1,14 +1,9 @@
 
 .container {
   max-width: 1760px;
-  //max-width: 1586px;
   padding: 0 60px;
   width: 100%;
   margin: 0 auto;
-
-  background-color: lightgreen;
-  opacity: .5;
-
 
   @include respond-to($xxl) {
     max-width: 1440px;
