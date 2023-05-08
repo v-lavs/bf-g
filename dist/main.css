@@ -2136,7 +2136,6 @@ body.modal_open {
 }
 
 .section-banner__slogan {
-  width: 45%;
   font-weight: 700;
   font-size: 55px;
   color: #02628C;
@@ -3012,6 +3011,10 @@ body.modal_open {
 
   .slider-gallery__wrap-img {
     max-width: 100%;
+  }
+
+  .donate-page .container {
+    overflow: hidden;
   }
 }
 

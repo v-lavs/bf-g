@@ -22,7 +22,6 @@
   }
 
   &__slogan {
-    width: 45%;
     font-weight: 700;
     font-size: 55px;
     color: #02628C;
@@ -73,7 +72,6 @@
 @include respond-to($md) {
 
   .section-banner {
-
     &__text {
       font-size: 22px;
     }

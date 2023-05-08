@@ -111,6 +111,12 @@
   }
 }
 
+@media only screen and (min-width: 1441px) {
+.donate-page .container{
+  overflow: hidden;
+}
+}
+
 @include respond-to($xxl) {
   .donate-page {
     .section-banner:before {
@@ -195,3 +201,4 @@
   }
 
 }
+
