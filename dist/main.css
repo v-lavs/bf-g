@@ -2564,7 +2564,9 @@ body.modal_open {
 
 .mission-card {
   padding: 60px 0;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  width: 100%;
+  max-width: 1760px;
 }
 
 .mission-card:nth-child(even) {

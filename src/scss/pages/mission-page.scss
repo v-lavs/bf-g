@@ -44,7 +44,9 @@
 
 .mission-card {
   padding: 60px 0;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  width: 100%;
+  max-width: 1760px;
 
   &:nth-child(even) {
     padding-top: 76px;
@@ -178,6 +180,7 @@
   .mission-card {
     padding-top: 30px;
     padding-bottom: 60px;
+
     .container {
       flex-direction: column;
       text-align: center;
