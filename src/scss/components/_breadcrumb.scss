@@ -13,9 +13,10 @@
     position: relative;
     padding-right: 16px;
     margin-right: 14px;
-
+flex-shrink: 0;
     &.active {
       font-weight: 700;
+      flex-shrink: 1;
     }
 
     &:before {
@@ -42,9 +43,23 @@
   }
 }
 
-@include respond-to($xs){
+@include respond-to($sm){
   .breadcrumb {
     font-size: 12px;
     margin-bottom: 40px;
+    &__item{
+    padding-right: 10px;
+    margin-right: 8px;
+      &:before {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+}
+@include respond-to($xs){
+  .breadcrumb {
+    padding-top: 7px;
+    margin-bottom: 15px;
   }
 }

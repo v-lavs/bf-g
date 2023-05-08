@@ -1589,10 +1589,12 @@ body.modal_open {
   position: relative;
   padding-right: 16px;
   margin-right: 14px;
+  flex-shrink: 0;
 }
 
 .breadcrumb__item.active {
   font-weight: 700;
+  flex-shrink: 1;
 }
 
 .breadcrumb__item:before {
@@ -1642,7 +1644,6 @@ body.modal_open {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: .35s;
 }
 
 .post .btn {
@@ -1652,6 +1653,7 @@ body.modal_open {
 
 .post__title {
   font-weight: 700;
+  transition: color .35s;
 }
 
 .post_sm {
@@ -2667,7 +2669,6 @@ body.modal_open {
 }
 
 .single-article .breadcrumb__item.active {
-  width: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2815,8 +2816,8 @@ body.modal_open {
   display: block;
 }
 
-.related-post__link:hover .post__thumb img {
-  transform: translate(-50%, -50%) scale(1.05);
+.related-post__link:hover .post__title {
+  color: #00ADF1;
   transition: .35s;
 }
 
@@ -2826,6 +2827,14 @@ body.modal_open {
 
 .related-post__item .post {
   max-width: none;
+}
+
+.related-post__item .post__title {
+  text-overflow: -o-ellipsis-lastline;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .donate-page .section-banner__slogan {
@@ -3413,6 +3422,21 @@ body.modal_open {
     padding-bottom: 80px;
   }
 
+  .breadcrumb {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumb__item {
+    padding-right: 10px;
+    margin-right: 8px;
+  }
+
+  .breadcrumb__item:before {
+    width: 8px;
+    height: 8px;
+  }
+
   .post__item {
     width: 100%;
   }
@@ -3479,6 +3503,10 @@ body.modal_open {
 
   .footer .menu__item {
     text-align: center;
+  }
+
+  .footer__menu {
+    padding-left: 0;
   }
 
   .wrap-contacts {
@@ -3724,7 +3752,7 @@ body.modal_open {
   }
 
   .main {
-    padding-top: 103px;
+    padding-top: 88px;
   }
 
   .menu__item {
@@ -3743,8 +3771,8 @@ body.modal_open {
   }
 
   .breadcrumb {
-    font-size: 12px;
-    margin-bottom: 40px;
+    padding-top: 7px;
+    margin-bottom: 15px;
   }
 
   .post__list {
@@ -3797,7 +3825,7 @@ body.modal_open {
 
   .header {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .header .container {
@@ -3966,6 +3994,7 @@ body.modal_open {
   .article .section__title {
     font-size: 22px;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .article {
@@ -4032,6 +4061,7 @@ body.modal_open {
   .donate-page .section-banner__slogan {
     font-size: 32px;
     max-width: 290px;
+    padding-top: 45px;
   }
 
   .section-bank-info {

@@ -208,7 +208,7 @@
 @include respond-to($xs) {
   .header {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 
     .container {
       flex-wrap: wrap;

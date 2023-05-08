@@ -6,7 +6,6 @@
   .breadcrumb__item {
 
     &.active {
-      width: 50%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -155,8 +154,8 @@
 .related-post__link{
   display: block;
   &:hover{
-    .post__thumb img{
-      transform: translate(-50%, -50%) scale(1.05);
+    .post__title{
+      color: #00ADF1;
       transition: .35s;
     }
   }
@@ -166,6 +165,13 @@
 
   .post {
     max-width: none;
+    &__title{
+      text-overflow: -o-ellipsis-lastline;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
   }
 }
 
@@ -200,6 +206,7 @@
   .article .section__title {
     font-size: 22px;
     text-align: center;
+    margin-bottom: 30px;
   }
   .article {
     margin-bottom: 30px;
