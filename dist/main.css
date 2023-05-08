@@ -1318,11 +1318,17 @@ body.modal_open {
 }
 
 .page .section-banner .wrap-img {
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
-  width: 50vw;
+  width: 50%;
   left: 50%;
   height: 100%;
   max-width: 960px;
+}
+
+.page .section-banner .wrap-img img {
+  position: relative;
 }
 
 .page.page-bg .page__title {
@@ -2940,16 +2946,6 @@ body.modal_open {
 }
 
 @media only screen and (min-width: 1441px) {
-  .home-banner .container {
-    min-height: 720px;
-  }
-
-  .advantages {
-    max-width: 1062px;
-  }
-}
-
-@media only screen and (min-width: 1568px) {
   .post,
   .post_md,
   .post_lg,
@@ -2957,8 +2953,16 @@ body.modal_open {
     max-width: 100%;
   }
 
+  .swiper {
+    max-width: 100%;
+  }
+
   .content__box {
     max-width: 1260px;
+  }
+
+  .home-banner .container {
+    min-height: 720px;
   }
 
   .section-about .section__img {
@@ -2979,6 +2983,18 @@ body.modal_open {
   .charity .section__img {
     justify-content: normal;
     left: -36px;
+  }
+
+  .advantages {
+    max-width: 1062px;
+  }
+
+  .about-helps .post {
+    max-width: 100%;
+  }
+
+  .slider-gallery__wrap-img {
+    max-width: 100%;
   }
 }
 

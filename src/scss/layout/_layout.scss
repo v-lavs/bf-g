@@ -33,7 +33,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  @media only screen and (min-width: 1568px){
+  @media only screen and (min-width: 1441px){
     max-width: 1260px;
   }
   @include respond-to($lg) {

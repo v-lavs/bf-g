@@ -77,7 +77,8 @@ body {
   }
 
   a {
-      color: #7fc2da;
+    color: #7fc2da;
+
     &:hover,
     &:focus {
       text-decoration: underline;
@@ -199,11 +200,16 @@ body {
     }
 
     .wrap-img {
+      display: flex;
+      justify-content: flex-end;
       position: absolute;
-      width: 50vw;
+      width: 50%;
       left: 50%;
       height: 100%;
       max-width: 960px;
+      img{
+        position: relative;
+      }
     }
 
   }
@@ -328,7 +334,7 @@ body {
       margin-bottom: 30px;
     }
   }
-  .main{
+  .main {
     padding-top: 88px;
   }
 }

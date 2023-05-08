@@ -168,6 +168,12 @@
   }
 }
 
+@media only screen and (min-width: 1441px){
+  .slider-gallery__wrap-img {
+    max-width: 100%;
+  }
+}
+
 @include respond-to($md) {
   .related-post-list {
     flex-wrap: wrap;
@@ -183,8 +189,6 @@
     margin-bottom: 80px;
   }
 }
-
-
 
 @include respond-to($sm) {
   .article {
