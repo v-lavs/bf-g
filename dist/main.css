@@ -2978,8 +2978,8 @@ body.modal_open {
     width: 607px;
   }
 
-  .home-banner .container {
-    min-height: 720px;
+  .home-banner .section-banner__wrap-img {
+    bottom: -30px;
   }
 
   .section-about .section__img {
