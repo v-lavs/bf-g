@@ -8,10 +8,15 @@
 
 // CUSTOM SCRIPTS
 
+let valuablesSlider;
+let advantagesSlider;
 
 $(document).ready(function () {
+
+
     function destroySwiper(sliderInstance) {
         if (sliderInstance instanceof Swiper && sliderInstance.initialized) {
+            console.log(sliderInstance)
             sliderInstance.destroy(true, true);
             console.log('destroy')
         }
@@ -41,140 +46,92 @@ $(document).ready(function () {
     });
 
     //SLIDER NEWS
-    const sliderNews = new Swiper(".slider-news", {
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 24,
+
+    if ($('.slider-news').length > 0) {
+        const sliderNews = new Swiper(".slider-news", {
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                }
             },
-
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-
-    const sliderGallery = new Swiper(".slider-gallery", {
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 24,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-
-    const sliderAboutHelps = new Swiper(".about-helps", {
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-            }
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-
-    const sliderPartners = new Swiper(".slider-partners", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-
-    //SLIDERS
-    let valuablesSlider;
-    let advantagesSlider;
-
-    function handleResponsive() {
-
-        // DESTROY SLIDER INSTANCES
-
-        if ($(window).outerWidth() <= 767) {
-            if (!valuablesSlider) {
-                valuablesSlider = new Swiper('.valuables', {
-                            slidesPerView: 1,
-                    pagination: {
-                        el: ".swiper-pagination",
-                    },
-                });
-            }
-        } else {
-            console.log(valuablesSlider)
-            destroySwiper(valuablesSlider);
-            valuablesSlider = null;
-        }
-
-        if ($(window).outerWidth() <= 767) {
-            if (!advantagesSlider) {
-                valuablesSlider = new Swiper('.advantages', {
-                    breakpoints: {
-                        320: {
-                            slidesPerView: 1,
-                        },
-
-                        540: {
-                            slidesPerView: 2,
-                        }
-                    },
-                    pagination: {
-                        el: ".swiper-pagination",
-                    },
-                });
-            }
-        } else {
-            destroySwiper(advantagesSlider);
-            advantagesSlider = null;
-        }
+        });
     }
 
-    let resizeId;
+    if ($('.slider-gallery').length > 0) {
+        const sliderGallery = new Swiper(".slider-gallery", {
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
 
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    }
 
-    handleResponsive();
+    if ($('.about-helps').length > 0) {
+        const sliderAboutHelps = new Swiper(".about-helps", {
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    }
 
-    window.addEventListener('resize', function () {
-        clearTimeout(resizeId);
-        resizeId = setTimeout(handleResponsive, 500);
-    });
+    if ($('.slider-partners').length > 0) {
+        const sliderPartners = new Swiper(".slider-partners", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    }
 
-
-    //BAGUETTE BOX
+//BAGUETTE BOX
     $('.awards-list a').click(function (e) {
         e.preventDefault();
     });
@@ -229,7 +186,63 @@ $(document).ready(function () {
     });
 
 
-});
+//SLIDERS
+
+    function handleResponsive() {
+
+        // DESTROY SLIDER INSTANCES
+
+        if ($(window).outerWidth() <= 767) {
+            const valuablesSliderSelector = document.querySelector('.valuables');
+
+            if (!valuablesSlider && valuablesSliderSelector) {
+                valuablesSlider = new Swiper('.valuables', {
+                    slidesPerView: 1,
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+            }
+        } else {
+            destroySwiper(valuablesSlider);
+            valuablesSlider = null;
+        }
+
+        if ($(window).outerWidth() <= 767) {
+            const advantagesSelector = document.querySelector('.advantages');
+            if (!advantagesSlider && advantagesSelector) {
+                advantagesSlider = new Swiper('.advantages', {
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                        },
+
+                        540: {
+                            slidesPerView: 2,
+                        }
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+            }
+        } else {
+            destroySwiper(advantagesSlider);
+            advantagesSlider = null;
+        }
+    }
+
+    let resizeId;
+
+
+    handleResponsive();
+
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeId);
+        resizeId = setTimeout(handleResponsive, 300);
+    });
+})
+;
 
 
 
