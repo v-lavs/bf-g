@@ -138,8 +138,16 @@
       opacity: 1;
       transform: none;
     }
+    .menu__link{
+      &:hover,
+      &:focus {
+        color: #FFFFFF;
+        -webkit-text-stroke-width: 0;
+      }
+    }
     .menu__item {
       color: #FFFFFF;
+
       &.desk-hide {
         display: block;
       }

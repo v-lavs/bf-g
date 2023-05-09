@@ -75,10 +75,3 @@
   }
 
 }
-
-@include respond-to($xs) {
-.valuables__card{
-  width: 100%;
-  flex-shrink: 0;
-}
-}

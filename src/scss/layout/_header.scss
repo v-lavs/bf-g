@@ -142,6 +142,7 @@
 @include respond-to($xl) {
   .header {
     padding: 23px 0;
+
     &__logo {
       max-width: 260px;
     }
@@ -153,12 +154,15 @@
     &__logo {
       max-width: 210px;
     }
-   &__lang-link {
+
+    &__lang-link {
       margin-right: 15px;
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
     }
+
     &__lang {
       font-size: 16px;
     }
@@ -210,9 +214,14 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
+    &__nav {
+      top: 88px;
+    }
+
     .container {
       flex-wrap: wrap;
     }
+
     &__lang {
       order: -1;
       width: 100%;
@@ -220,7 +229,8 @@
       margin-bottom: 5px;
       font-size: 12px;
     }
-    &__logo{
+
+    &__logo {
       max-width: 163px;
     }
   }
