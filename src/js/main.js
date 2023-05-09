@@ -41,7 +41,7 @@ $(document).ready(function () {
     });
 
     //SLIDER NEWS
-    var sliderNews = new Swiper(".slider-news", {
+    const sliderNews = new Swiper(".slider-news", {
         breakpoints: {
             320: {
                 slidesPerView: 1,
@@ -62,7 +62,7 @@ $(document).ready(function () {
         },
     });
 
-    var sliderGallery = new Swiper(".slider-gallery", {
+    const sliderGallery = new Swiper(".slider-gallery", {
         breakpoints: {
             320: {
                 slidesPerView: 1,
@@ -83,7 +83,7 @@ $(document).ready(function () {
         },
     });
 
-    var sliderAboutHelps = new Swiper(".about-helps", {
+    const sliderAboutHelps = new Swiper(".about-helps", {
         breakpoints: {
             320: {
                 slidesPerView: 1,
@@ -107,7 +107,7 @@ $(document).ready(function () {
         },
     });
 
-    var sliderPartners = new Swiper(".slider-partners", {
+    const sliderPartners = new Swiper(".slider-partners", {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -128,15 +128,7 @@ $(document).ready(function () {
         if ($(window).outerWidth() <= 767) {
             if (!valuablesSlider) {
                 valuablesSlider = new Swiper('.valuables', {
-                    breakpoints: {
-                        320: {
                             slidesPerView: 1,
-                        },
-
-                        540: {
-                            slidesPerView: 2,
-                        }
-                    },
                     pagination: {
                         el: ".swiper-pagination",
                     },
