@@ -89,7 +89,7 @@
     min-height: 254px;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: contain;
+    background-size: 80%;
     flex-shrink: 0;
   }
 
@@ -160,6 +160,10 @@
   }
   .mission-card {
     padding-bottom: 30px;
+
+    &__icon {
+      background-size: 100%;
+    }
   }
   .mission-card:nth-child(even) {
     padding-bottom: 60px;
@@ -180,6 +184,10 @@
   .mission-card {
     padding-top: 30px;
     padding-bottom: 60px;
+
+    &__icon {
+      background-size: contain;
+    }
 
     .container {
       flex-direction: column;

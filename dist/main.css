@@ -2212,7 +2212,7 @@ body.modal_open {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 198px;
+  width: 178px;
   height: 208px;
   margin: 0 auto;
 }
@@ -2626,7 +2626,7 @@ body.modal_open {
   min-height: 254px;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
+  background-size: 80%;
   flex-shrink: 0;
 }
 
@@ -3421,6 +3421,10 @@ body.modal_open {
     font-size: 24px;
   }
 
+  .section-valuables .valuables__icon {
+    width: 140px;
+  }
+
   .section-about .btn {
     min-width: 340px;
   }
@@ -3475,6 +3479,10 @@ body.modal_open {
 
   .mission-card {
     padding-bottom: 30px;
+  }
+
+  .mission-card__icon {
+    background-size: 100%;
   }
 
   .mission-card:nth-child(even) {
@@ -4057,6 +4065,10 @@ body.modal_open {
   .mission-card {
     padding-top: 30px;
     padding-bottom: 60px;
+  }
+
+  .mission-card__icon {
+    background-size: contain;
   }
 
   .mission-card .container {

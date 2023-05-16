@@ -25,7 +25,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 198px;
+      width: 178px;
       height: 208px;
       margin: 0 auto;
 
@@ -41,6 +41,9 @@
   .section-valuables {
     .valuables__text {
       font-size: 24px;
+    }
+    .valuables__icon{
+      width: 140px;
     }
   }
 }
@@ -59,6 +62,7 @@
         width: 100%;
         flex-shrink: 0;
       }
+
     }
 
     .swiper-pagination {
