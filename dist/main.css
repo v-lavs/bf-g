@@ -2322,7 +2322,7 @@ body.modal_open {
 .advantages__icon {
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 62px;
   height: 50%;
 }
 
