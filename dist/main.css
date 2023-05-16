@@ -2218,7 +2218,7 @@ body.modal_open {
 }
 
 .section-valuables .valuables__icon img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -2320,17 +2320,19 @@ body.modal_open {
 }
 
 .advantages__icon {
-  background-position: center bottom;
+  background-position: center bottom 1px;
   background-repeat: no-repeat;
-  background-size: 62px;
-  height: 50%;
+  background-size: auto;
+  height: 60%;
+  width: 90px;
+  margin: 0 auto;
 }
 
 .advantages__text {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  height: 40%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;

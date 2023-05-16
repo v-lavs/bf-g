@@ -36,17 +36,19 @@
   }
 
   &__icon {
-    background-position: center bottom;
+    background-position: center bottom 1px;
     background-repeat: no-repeat;
-    background-size: 62px;
-    height: 50%;
+    background-size: auto;
+    height: 60%;
+    width: 90px;
+    margin: 0 auto;
   }
 
   &__text {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    height: 40%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
