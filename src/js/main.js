@@ -107,6 +107,10 @@ $(document).ready(function () {
                 992: {
                     slidesPerView: 3,
                     spaceBetween: 24,
+                },
+                1361: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
                 }
             },
             navigation: {
